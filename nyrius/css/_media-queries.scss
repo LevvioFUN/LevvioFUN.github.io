@@ -1,0 +1,151 @@
+@mixin header {
+  @media screen and (max-width: 767px) {
+    .container {
+      .logo, p {
+        display: block;
+        margin: 0 auto 25px;
+        position: relative;
+        text-align: center;
+      }
+      .nav_header {
+        text-align: center;
+        margin: 0 auto;
+        float: none;
+        ul {
+          text-align: center;
+          li {
+            margin: 17px 35px;
+            &:nth-child(3) {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 975px) {
+    .container {
+      .logo,
+      .nav_header {
+        margin-right: 15px;
+        margin-left: 15px;
+      }
+      p {
+        right: 15px;
+      }
+    }
+  }
+}
+
+@mixin section {
+  @media screen and (max-width: 757px) {
+    .container {
+      .owl-carousel {
+        .btn_carousel {
+          height: 40px;
+          width: 150px;
+          &:after {
+            font-size: 18px;
+            line-height: 40px;
+          }
+        }
+        .dots_disabled {
+          display: none;
+        }
+        img {
+          height: 200px;
+        }
+      }
+    }
+    .container_2 {
+      .ban_cont_1 {
+        margin: auto;
+        max-width: 320px;
+        float: none;
+        .ban {
+          width: 100%;
+        }
+      }
+      .ban_3 {
+        margin: 20px auto;
+        float: none;
+        max-width: 320px;
+        display: block;
+      }
+      .ban_cont_2 {
+        max-width: 320px;
+        margin: auto;
+        float: none;
+        .ban_4 {
+          display: block;
+          margin: 0 auto 20px;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 959px) {
+    .container {
+      max-width: 768px;
+    }
+    .container_2 {
+      width: 100%;
+      max-width: 768px;
+      .ban_cont_1 {
+        margin-left: 29px;
+      }
+      .ban_cont_2 {
+        margin-top: 20px;
+        .ban_4, .ban_5 {
+          display: inline-block;
+        }
+        .ban_4 {
+          margin: 0 75px 0 65px;
+        }
+      }
+    }
+  }
+}
+
+@mixin footer {
+  @media screen and (min-width: 319px) and (max-width: 877px) {
+    .container {
+      text-align: center;
+      .left {
+        display: block;
+        .menu_footer {
+          text-align: center;
+            ul {
+              li {
+                padding: 10px;
+                margin-right: 0;
+              }
+            }
+        }
+        h2 {
+          text-align: center;
+        }
+      }
+      .right {
+        float: none;
+        .language {
+          .form {
+            display: block;
+            margin-top: 25px;
+            form {
+              label {
+                display: block;
+                margin: 25px auto;
+              }
+            }
+          }
+        }
+        .social {
+          float: none;
+          li {
+            margin: 25px;
+          }
+        }
+      }
+    }
+  }
+}

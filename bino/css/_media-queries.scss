@@ -1,0 +1,660 @@
+@import "mixin";
+/*--------------------------------------------BUTTON_TO_TOP---------------------------------------------*/
+@mixin toTop {
+  @media screen and (max-width: 767px) {
+    width: 35px;
+    height: 35px;
+    bottom: 30px;
+    right: 30px;
+    .fa {
+      vertical-align: top;
+      position: relative;
+      top: -2px;
+    }
+  }
+}
+/*---------------------------------------------MENU AND CAROUSEL------------------------------------------------------*/
+@mixin header {
+  @media screen and (max-width: 767px) {
+    .navbar-default {
+      .container {
+        .row {
+          .navbar-header {
+            margin-top: 15px;
+            .navbar-brand {
+              margin-left: 15px;
+            }
+          }
+          .navbar-collapse {
+            margin-top: 15px;
+            .navbar-right {
+              background: linear-gradient(to top, #483a2e, #3f3e40);
+              li {
+                margin: 0 15px;
+                &:first-child {
+                  margin-left: 15px;
+                }
+                a {
+                  padding: 5px;
+                  text-align: left;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .default {
+      .container {
+        .row {
+          .navbar-header {
+            margin-bottom: 15px;
+          }
+        }
+      }
+    }
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          .owl-carousel {
+            .bg_slide {
+              height: 890px;
+              .content_slide {
+                h3 {
+                  font-size: 15px;
+                }
+                h1 {
+                  font-size: 45px;
+                  margin: 25px 0;
+                }
+                p {
+                  max-width: 290px;
+                  font-size: 14px;
+                  margin: 25px auto;
+                }
+                a {
+                  margin: 15px;
+                }
+              }
+            }
+            .owl-nav.disabled {
+              display: none;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .navbar-default {
+      .container {
+        .row {
+          .navbar-collapse {
+            .navbar-right {
+              li {
+                margin: 0 15px;
+              }
+            }
+          }
+        }
+      }
+    }
+    .container-fluid {
+      .row {
+        .col-md-12 {
+          .owl-carousel {
+            .bg_slide {
+              .content_slide {
+                h3 {
+                  font-size: 20px;
+                }
+                h1 {
+                  font-size: 50px;
+                }
+                p {
+                  max-width: 500px;
+                }
+              }
+            }
+            .owl-nav {
+              .owl-prev {
+                left: 20px;
+              }
+              .owl-next {
+                right: 20px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------PROFESSIONAL_SKILLS------------------------------------------------------*/
+@mixin skills {
+  @media screen and (max-width: 767px) {
+    .container {
+      .row {
+        .col-md-12 {
+          a {
+            margin: 0 auto 32px auto;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .container {
+      .row {
+        padding-bottom: 0;
+        .col-md-12 {
+          margin-bottom: 50px;
+        }
+        .col-md-3 {
+          .info {
+            p {
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------------OUR_HISTORY---------------------------------------------*/
+@mixin history {
+  @media screen and (max-width: 767px) {
+    .container {
+      padding-bottom: 100px;
+      padding-top: 50px;
+      .row {
+        .col-md-6 {
+          text-align: center;
+          h2 {
+            margin: 49px 0;
+          }
+          p {
+            font-size: 14px;
+            color: #999;
+          }
+          .history_2 {
+            margin: 34px 0 48px 0;
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      padding: 100px 15px;
+      .row {
+        .monitor {
+          text-align: center;
+          padding-bottom: 45px;
+          img {
+            display: inline-block;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*--------------------------------------------OUR_SERVICES---------------------------------------------*/
+@mixin services {
+  @media screen and (max-width: 767px) {
+    .container-fluid {
+      .row {
+        .col-md-7 {
+          padding: 75px 15px 70px;
+          h2 {
+            margin-bottom: 25px;
+            width: 100%;
+            text-align: center;
+          }
+          .info {
+            text-align: center;
+            &:after {
+              position: static;
+            }
+            h3 {
+              margin: 30px 0 15px;
+            }
+            p {
+              margin-bottom: 20px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container-fluid {
+      .row {
+        .col-md-7 {
+          padding: 100px 80px 65px 0;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------RECENT_WORKS------------------------------------------------------*/
+@mixin works {
+  @media screen and (max-width: 767px) {
+    .container {
+      padding-top: 0;
+      .row {
+        .center {
+          text-align: center;
+          .btn-default {
+            text-align: center;
+            padding: 20px;
+            &:after {
+              content: '';
+              margin: 0;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      .row {
+        .center {
+          color: #999;
+          margin-bottom: 45px;
+          .btn-default {
+            border: none;
+            color: #999;
+            background: none;
+            outline: none;
+            &:after {
+              content: '/';
+              margin-left: 20px;
+            }
+            &:hover {
+              color: $red;
+              box-shadow: none;
+              font-weight: bold;
+            }
+            &:hover:after {
+              color: #999;
+              font-weight: normal;
+            }
+          }
+          .btn_last {
+            &:after {
+              content: '';
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------CASE_STUDY------------------------------------------------------*/
+@mixin carousel_study {
+  @media screen and (max-width: 767px) {
+    .container {
+      .row {
+        .col-sm-7 {
+          padding-left: 15px;
+          margin-bottom: 50px;
+          .owl-carousel {
+            padding: 0;
+            .owl-stage-outer {
+              .owl-item {
+                padding: 0 15px;
+                .content_slide {
+                  .img {
+                    margin: 50px auto 68px auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      .row {
+        .col-sm-7 {
+          padding-left: 15px;
+          .owl-carousel {
+            margin-top: 50px;
+            padding: 0 15px;
+            .owl-stage-outer {
+              .owl-item {
+                .content_slide {
+                  .img {
+                    margin: 77px auto 68px auto;
+                  }
+                }
+              }
+            }
+          }
+        }
+        .right_img {
+          position: relative;
+          margin: 0 0 150px -63px;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------NUMBER_COUNTER------------------------------------------------------*/
+@mixin number_counter {
+  @media screen and (max-width: 767px) {
+    .container {
+      padding-bottom: 50px;
+      .row {
+        .col-sm-five {
+          img {
+            border: 1px solid #fff;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 50px 0 50px 0;
+          }
+          .text {
+            margin-bottom: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------OUR_PRICING------------------------------------------------------*/
+@mixin price {
+  @media screen and (max-width: 767px) {
+    .container {
+      .row {
+        .col-premium {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 991px) {
+    .container {
+      .row {
+        .col-md-4 {
+          .price_body {
+            margin-bottom: 50px;
+          }
+        }
+        .col-premium {
+          padding: 0 15px;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------OUR_TEAM------------------------------------------------------*/
+@mixin team {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      .row {
+        .col-md-12 {
+          ul {
+            li {
+              &:first-child {
+                top: 65px;
+              }
+              &:nth-child(2) {
+                left: 160px;
+                top: 53px;
+              }
+              &:nth-child(3) {
+                left: 298px;
+                top: 54px;
+              }
+              &:nth-child(4) {
+                right: 168px;
+                top: 81px;
+              }
+              &:nth-child(5) {
+                top: 98px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .container {
+      .row {
+        .col-md-12 {
+          ul {
+            li {
+              &:first-child {
+                top: 80px;
+              }
+              &:nth-child(2) {
+                left: 269px;
+                top: 53px;
+              }
+              &:nth-child(3) {
+                left: 456px;
+                top: 60px;
+              }
+              &:nth-child(4) {
+                right: 196px;
+                top: 95px;
+              }
+              &:nth-child(5) {
+                top: 93px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    .container {
+      .row {
+        .col-md-12 {
+          ul {
+            padding-top: 56px;
+            text-align: center;
+            li {
+              width: 15%;
+              display: inline-block;
+              position: relative;
+              margin: 0 5px;
+              .team {
+                img {
+                  width: 100%;
+                }
+              }
+              &:first-child {
+                top: 0;
+                left: 0;
+              }
+              &:nth-child(2) {
+                top: 0;
+                left: 0;
+              }
+              &:nth-child(3) {
+                top: 0;
+                left: 0;
+              }
+              &:nth-child(4) {
+                top: 11px;
+                left: 0;
+              }
+              &:nth-child(5) {
+                top: 25px;
+                left: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 393px) {
+    .container {
+      .row {
+        .col-md-12 {
+          ul {
+            padding-top: 32px;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------GREAT_INTEGRATIONS_WITH_OTHERS------------------------------------------------------*/
+@mixin integrations {
+  @media screen and (max-width: 767px) {
+    .container_brands {
+      padding-bottom: 50px;
+      .row {
+        margin-bottom: 0;
+        .col-sm-five {
+          padding: 0 15px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------OUR_BLOG------------------------------------------------------*/
+@mixin blog {
+  @media screen and (max-width: 767px) {
+    .container-fluid {
+      .row {
+        .blog_1,
+        .blog_2 {
+          &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            bottom: 360px;
+            margin-left: -21px;
+            border: 20px solid transparent;
+            border-bottom: 20px solid $red;
+          }
+        }
+        .blog_img_3,
+        .blog_img_4 {
+          &:after {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: 0;
+            margin-left: -21px;
+            border: 20px solid transparent;
+            border-top: 20px solid $red;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------KEEP_IN_TOUCH------------------------------------------------------*/
+@mixin contact_form {
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .container {
+      .row {
+        .col-md-5 {
+          margin-top: 15px;
+          .contact_info {
+            text-align: center;
+            padding: 4px 50px 100px 50px;
+          }
+        }
+        .col-md-7 {
+          margin-top: 15px;
+          .form-area {
+            padding: 65px 50px 0 50px;
+            button {
+              width: 100%;
+              margin-bottom: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (max-width: 767px) {
+    padding-bottom: 100px;
+    .container {
+      .row {
+        .col-md-5 {
+          .contact_info {
+            text-align: center;
+            padding: 4px 30px 50px 30px;
+            h3 {
+              margin-top: 50px;
+            }
+          }
+        }
+        .col-md-7 {
+          margin-top: 15px;
+          .form-area {
+            padding: 35px 30px 0 30px;
+            button {
+              width: 100%;
+              margin-bottom: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------FOOTER------------------------------------------------------*/
+@mixin footer {
+  @media screen and (max-width: 767px) {
+    .container {
+      .row {
+        text-align: center;
+        .col-sm-6 {
+          margin-bottom: 25px;
+          h2 {
+            text-align: center;
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------FIVE_COLUMNS------------------------------------------------------*/
+@media (min-width: 768px) {
+  .col-sm-five {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 992px) {
+  .col-md-five {
+    width: 20%;
+    float: left;
+  }
+}
+
+@media (min-width: 1200px) {
+  .col-lg-five {
+    width: 20%;
+    float: left;
+  }
+}

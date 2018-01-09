@@ -1,0 +1,15 @@
+@mixin container {
+    width: 100%;
+    max-width: 960px;
+    margin: auto;
+}
+@mixin btn_cont {
+    display: block;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    box-sizing: border-box;
+}

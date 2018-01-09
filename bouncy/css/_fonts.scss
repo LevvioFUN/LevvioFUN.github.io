@@ -1,0 +1,29 @@
+@font-face {
+  font-family: 'big_john';
+  src: url('../fonts/big_john.eot');
+  src: url('../fonts/big_john.eot') format('embedded-opentype'),
+  url('../fonts/big_john.woff2') format('woff2'),
+  url('../fonts/big_john.woff') format('woff'),
+  url('../fonts/big_john.ttf') format('truetype'),
+  url('../fonts/big_john.svg#big_john') format('svg');
+}
+
+@font-face {
+  font-family: 'open_sans';
+  src: url('../fonts/open_sans.eot');
+  src: url('../fonts/open_sans.eot') format('embedded-opentype'),
+  url('../fonts/open_sans.woff2') format('woff2'),
+  url('../fonts/open_sans.woff') format('woff'),
+  url('../fonts/open_sans.ttf') format('truetype'),
+  url('../fonts/open_sans.svg#open_sans') format('svg');
+}
+
+@font-face {
+  font-family: 'source_sans_pro_light';
+  src: url('../fonts/source_sans_pro_light.eot');
+  src: url('../fonts/source_sans_pro_light.eot') format('embedded-opentype'),
+  url('../fonts/source_sans_pro_light.woff2') format('woff2'),
+  url('../fonts/source_sans_pro_light.woff') format('woff'),
+  url('../fonts/source_sans_pro_light.ttf') format('truetype'),
+  url('../fonts/source_sans_pro_light.svg#source_sans_pro_light') format('svg');
+}
