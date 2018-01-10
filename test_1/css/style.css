@@ -21,6 +21,7 @@ body {
         #wrap header .container .content img {
           width: 100%; }
   #wrap section {
+  	height: 350px;
     padding-bottom: 152px; }
     #wrap section .container {
       width: 100%;
@@ -46,7 +47,7 @@ body {
   @media screen and (min-width: 568px) and (max-width: 812px) {
     #wrap section {
       height: 560px; }
-      #wrap section .container img {max-width: 300px; } }
+    #wrap section .container img {max-width: 300px; } }
 
 footer {
   background: rgba(7, 3, 38, 0.4);
