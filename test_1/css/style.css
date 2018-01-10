@@ -1,0 +1,147 @@
+*{margin:0;padding:0;font-size:inherit;color:inherit;-webkit-font-smoothing:antialiased;}a{outline:none;text-decoration:none;background-color:transparent;}
+html {height:100%;}h2,h3{font-weight:normal;}body{position:relative;background:#ffffff;font-size:13px;color:#575757;height:100%;}
+
+body {
+  background: url(../img/background.jpg) top;
+  background-size: cover; }
+
+#wrap {
+  position: relative;
+  min-height: 100%; }
+  #wrap header {
+    background: rgba(0, 0, 0, 0.4); }
+    #wrap header .container {
+      text-align: center;
+      padding: 10px 0; }
+      #wrap header .container .content, #wrap header .container .logo {
+        display: inline-block;
+        width: 50%; }
+      #wrap header .container .content {
+        margin-top: 10px; }
+        #wrap header .container .content img {
+          width: 100%; }
+  #wrap section {
+    padding-bottom: 152px; }
+    #wrap section .container {
+      width: 100%;
+      text-align: right;
+      position: absolute;
+      bottom: 152px;
+      animation-name: product;
+      animation-duration: 2.1s;
+      animation-timing-function: linear; }
+      #wrap section .container img {
+        max-width: 175px; }
+@-webkit-keyframes product {
+   0% {
+    left: 100px;
+    opacity: 0; }
+   30% {
+    left: 0; }
+   75% {
+    left: 0; }
+   100% {
+    left: 0; } }
+
+  @media screen and (min-width: 568px) and (max-width: 812px) {
+    #wrap section {
+      height: 560px; } }
+
+footer {
+  background: rgba(7, 3, 38, 0.4);
+  padding: 15px 0;
+  box-sizing: border-box;
+  height: 152px;
+  margin-top: -152px;
+  animation-name: footer;
+  animation-duration: 1.5s;
+  animation-timing-function: linear; }
+@-webkit-keyframes footer {
+   0% {
+    opacity: 0; }
+   25% {
+    opacity: 0; }
+   50% {
+    opacity: .5; }
+   75% {
+    opacity: .8; }
+   90% {
+    opacity: .9; }
+   100% {
+    opacity: 1; } }
+
+  footer .container {
+    text-align: center;
+    color: #fff; }
+    footer .container h2 {
+      display: inline-block;
+      font-family: "Trebuchet MS", sans-serif;
+      font-size: 18px;
+      padding: 5px 0;
+      box-sizing: border-box;
+      border-top: 1px solid #fff;
+      border-bottom: 1px solid #fff;
+      text-transform: uppercase; }
+    footer .container p {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      margin: 15px 0; }
+      footer .container p .white {
+        background-color: #fff;
+        color: #000;
+        padding: 2px 7px;
+        border-radius: 10px;
+        font-weight: bold; }
+    footer .container .cupon {
+      display: inline-block;
+      background-color: #fff;
+      padding: 10px 15px;
+      animation-name: cupon;
+      animation-duration: 1s;
+      animation-timing-function: linear; }
+      footer .container .cupon a {
+        font-family: Arial, sans-serif;
+        font-weight: bold;
+        display: inline-block;
+        text-transform: uppercase;
+        font-size: 14px;
+        float: left;
+        color: black; }
+      footer .container .cupon .arrow {
+        position: relative;
+        float: right;
+        background: url(../img/arrow.svg) center no-repeat;
+        display: inline-block;
+        height: 15px;
+        width: 10px;
+        margin-left: 3px;
+        animation-name: arrow;
+        animation-duration: .65s;
+        animation-timing-function: linear;
+        animation-delay: 0s;
+        animation-iteration-count: infinite; }
+@keyframes arrow {
+   0% {
+    left: 0; }
+   30% {
+    left: 0; }
+   75% {
+    left: 0; }
+   100% {
+    left: 5px; } }
+@keyframes cupon {
+   from {
+    opacity: 0;
+    transform: scale3d(.3, .3, .3); }
+   50% {
+    opacity: 0; }
+   65% {
+    opacity: 0; }
+   75% {
+    opacity: 1; }
+   95% {
+    opacity: 1; } }
+.clearfix:after {
+  content: '';
+  display: block;
+  clear: both; }
