@@ -5,19 +5,10 @@
   color: inherit;
   -webkit-font-smoothing: antialiased; }
 
-button::-moz-focus-inner {
-  padding: 0;
-  border: 0; }
-
 a {
   outline: none;
   text-decoration: none;
-  background-color: transparent;
-  font-size: 11px;
-  color: #2d2a2b; }
-
-img {
-  border: none; }
+  background-color: transparent; }
 
 html {
   height: 100%; }
@@ -29,15 +20,14 @@ body {
   position: relative;
   background: #ffffff;
   font-size: 13px;
-  color: #575757; }
+  color: #575757;
+  height: 100%; }
 
 body {
   background: url(../img/background.jpg) top;
-  background-size: cover;
-  height: 100%; }
+  background-size: cover; }
 
 #wrap {
-  position: relative;
   min-height: 100%; }
   #wrap header {
     background: rgba(0, 0, 0, 0.4); }
@@ -52,18 +42,21 @@ body {
         #wrap header .container .content img {
           width: 100%; }
   #wrap section {
-    padding-bottom: 152px; }
-    #wrap section img {
-      max-width: 175px;
+    height: 324px;
+    padding-bottom: 152px;
+    position: relative; }
+    #wrap section .container {
       position: absolute;
+      width: 100%;
       bottom: 152px;
-      right: 0; }
+      text-align: right; }
+      #wrap section .container img {
+        max-width: 175px; }
 
 footer {
   background: rgba(7, 3, 38, 0.4);
   padding: 15px 0;
   box-sizing: border-box;
-  display: block;
   height: 152px;
   margin-top: -152px; }
   footer .container {
@@ -98,7 +91,8 @@ footer {
         display: inline-block;
         text-transform: uppercase;
         font-size: 14px;
-        float: left; }
+        float: left;
+        color: black; }
       footer .container .cupon .arrow {
         float: right;
         background: url(../img/arrow.svg) center no-repeat;
