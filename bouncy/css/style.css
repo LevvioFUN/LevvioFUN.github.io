@@ -121,8 +121,14 @@ header {
   border-radius: 100px;
   padding: 10px 23px;
   text-decoration: none;
+  transition: .5s;
   color: black;
   border-color: black; }
+  .section_1 .container .row .col-md-5 a:hover {
+    background: rgba(0, 0, 0, 0.7);
+    color: #FFFFFF;
+    border: 1px solid #ccc;
+    transition: .5s; }
 .section_1 .container .row .col-md-3 img {
   margin: 80px 0 57px 0; }
 @media screen and (max-width: 767px) {
@@ -248,7 +254,13 @@ header {
       border: 1px solid #fff;
       border-radius: 100px;
       padding: 10px 23px;
-      text-decoration: none; }
+      text-decoration: none;
+      transition: .5s; }
+      .section_3 .fluid_2 .row .container .row .submit a:hover {
+        background: #fff;
+        color: #19a486;
+        border: 1px solid #ccc;
+        transition: .5s; }
 @media screen and (max-width: 767px) {
   .section_3 .fluid_2 .container .row .col-md-8 p {
     text-align: center; }
@@ -356,8 +368,10 @@ header {
           border-bottom-left-radius: 90px;
           border-right: 0;
           transform-origin: right;
-          animation: loading-1 0.01s linear forwards; }
-    .section_4 .container .row .circle .col-sm-4 .green_1 .progress-value, .section_4 .container .row .circle .col-sm-4 .green_2 .progress-value, .section_4 .container .row .circle .col-sm-4 .green_3 .progress-value {
+          animation: loading-1 .01s linear forwards; }
+    .section_4 .container .row .circle .col-sm-4 .green_1 .progress-value,
+    .section_4 .container .row .circle .col-sm-4 .green_2 .progress-value,
+    .section_4 .container .row .circle .col-sm-4 .green_3 .progress-value {
       width: 125px;
       height: 125px;
       border-radius: 50%;
@@ -368,9 +382,13 @@ header {
       position: absolute;
       top: -5%;
       left: 0; }
-    .section_4 .container .row .circle .col-sm-4 .green_1 .progress-left .progress-bar, .section_4 .container .row .circle .col-sm-4 .green_2 .progress-left .progress-bar, .section_4 .container .row .circle .col-sm-4 .green_3 .progress-left .progress-bar {
+    .section_4 .container .row .circle .col-sm-4 .green_1 .progress-left .progress-bar,
+    .section_4 .container .row .circle .col-sm-4 .green_2 .progress-left .progress-bar,
+    .section_4 .container .row .circle .col-sm-4 .green_3 .progress-left .progress-bar {
       transform: rotate(180deg); }
-    .section_4 .container .row .circle .col-sm-4 .green_1 .progress-right .progress-bar, .section_4 .container .row .circle .col-sm-4 .green_2 .progress-right .progress-bar, .section_4 .container .row .circle .col-sm-4 .green_3 .progress-right .progress-bar {
+    .section_4 .container .row .circle .col-sm-4 .green_1 .progress-right .progress-bar,
+    .section_4 .container .row .circle .col-sm-4 .green_2 .progress-right .progress-bar,
+    .section_4 .container .row .circle .col-sm-4 .green_3 .progress-right .progress-bar {
       transform: rotate(-130deg); }
     .section_4 .container .row .circle .col-sm-4 .green_2 .progress-right .progress-bar {
       transform: rotate(-90deg); }
@@ -490,10 +508,10 @@ header {
     text-align: center;
     column-count: 4;
     column-width: 250px; }
-  @media (min-width: 769px) and (max-width: 1025px) {
-    .section_6 .container .row .col-md-12 .row .wrapper {
-      column-count: 4;
-      column-width: 150px; } }
+    @media (min-width: 769px) and (max-width: 1025px) {
+      .section_6 .container .row .col-md-12 .row .wrapper {
+        column-count: 4;
+        column-width: 150px; } }
     .section_6 .container .row .col-md-12 .row .wrapper img {
       display: block;
       width: 100%;
@@ -563,7 +581,16 @@ header {
           border: 1px solid #fff;
           border-radius: 100px;
           padding: 10px 23px;
-          text-decoration: none; }
+          text-decoration: none;
+          transition: .5s; }
+          .section_6 .link .row .col-md-12 .col-md-8 a:hover {
+            background: #fff;
+            color: #19a486;
+            border: 1px solid #ccc;
+            transition: .5s; }
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .section_6 .container .row .center .btn-default {
+      margin: 0 13px 60px 13px; } }
 
 .section_7 .container .row .col-md-6 {
   text-align: center; }
@@ -666,7 +693,13 @@ header {
       border-radius: 100px;
       padding: 10px 23px;
       text-decoration: none;
+      transition: .5s;
       margin-bottom: 25px; }
+      .section_7 .container-fluid .row .container .row a:hover {
+        background: #fff;
+        color: #000;
+        border: 1px solid #fff;
+        transition: .5s; }
 @media screen and (max-width: 767px) {
   .section_7 .container .row .col-md-10 .owl-carousel .row .col-md-3 {
     float: none !important; }
@@ -1147,3 +1180,5 @@ footer {
 .black {
   font-weight: bold;
   color: #5f6366; }
+
+/*# sourceMappingURL=style.css.map */

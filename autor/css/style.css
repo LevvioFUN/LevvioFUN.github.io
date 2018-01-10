@@ -184,7 +184,7 @@ header .navbar {
             padding: 12px 50px;
             border-radius: 3px;
             text-decoration: none;
-            transition: .1; }
+            transition: .1s; }
             .price .container .row .col-md-4 ul li a:hover {
               box-shadow: inset 2px 2px 2px rgba(0, 0, 0, 0.4);
               transition: .1s; }

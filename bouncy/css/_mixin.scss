@@ -15,6 +15,7 @@ $p_color: #81868e;
   border-radius: 100px;
   padding: 10px 23px;
   text-decoration: none;
+  transition: .5s;
 }
 @mixin head_section {
   .row {
