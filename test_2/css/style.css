@@ -26,6 +26,9 @@ a {
   text-decoration: none;
   background-color: transparent; }
 
+ul {
+  list-style: none; }
+
 html {
   height: 100%; }
 
@@ -40,7 +43,8 @@ body {
   height: 100%; }
 
 body {
-  height: 100%; }
+  height: 100%;
+  overflow: hidden; }
 
 .container {
   margin: auto;
@@ -170,7 +174,7 @@ footer {
     position: relative;
     margin-bottom: 10px; }
     footer .container .alert .alert_top {
-      width: 85%;
+      width: 270px;
       animation-name: alert;
       animation-duration: 10s;
       animation-timing-function: ease-in-out;
@@ -187,7 +191,7 @@ footer {
     opacity: 0; } }
 
     footer .container .alert .alert_back {
-      width: 85%;
+      width: 270px;
       position: absolute;
       top: 12px;
       left: 44px;

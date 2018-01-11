@@ -14,7 +14,9 @@ a {
   text-decoration: none;
   background-color: transparent;
 }
-
+ul {
+  list-style: none;
+}
 html {
   height: 100%;
 }
@@ -33,6 +35,7 @@ body {
 
 body {
   height: 100%;
+  overflow: hidden;
 }
 
 .container {
@@ -196,7 +199,7 @@ footer {
       position: relative;
       margin-bottom: 10px;
       .alert_top {
-        width: 85%;
+        width: 270px;
         animation-name: alert;
         animation-duration: 10s;
         animation-timing-function: ease-in-out;
@@ -218,7 +221,7 @@ footer {
         }
       }
       .alert_back {
-        width: 85%;
+        width: 270px;
         position: absolute;
         top: 12px;
         left: 44px;
