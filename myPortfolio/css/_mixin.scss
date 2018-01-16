@@ -1,0 +1,10 @@
+@keyframes drop {
+  0% {
+    top: 0;
+    opacity: 1;
+  }
+  100% {
+    top: 25px;
+    opacity: 0;
+  }
+}
