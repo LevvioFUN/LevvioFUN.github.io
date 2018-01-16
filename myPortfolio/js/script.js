@@ -17,7 +17,7 @@ $(document).ready(function () {
         $('body,html').animate({scrollTop: top}, 1000);
     });
     //E-mail Ajax Send
-    $("form").submit(function() { //Change
+    $("#form").submit(function() { //Change
         var th = $(this);
         $.ajax({
             type: "POST",
