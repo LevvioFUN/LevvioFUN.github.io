@@ -1,0 +1,14 @@
+/* Helvetica Ultra light */
+@font-face {
+    font-family: 'GOTHIC';
+    src: url('../xtra/GOTHIC.TTF');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GOTHICB';
+    src: url('../xtra/GOTHICB.TTF');
+    font-weight: normal;
+    font-style: normal;
+}

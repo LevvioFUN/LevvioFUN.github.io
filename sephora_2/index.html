@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="landingApp" style="height:100%;width:100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Sephora</title>
+    <meta name="description" content="Sephora">
+    <meta name="application-name" content="Sephora">
+    <link rel="shortcut icon" type="image/x-icon" href="ressources/images/logo.png">
+    <link rel="stylesheet" href="ressources/css/interstitiel-ui.css">
+</head>
+
+<body
+        ng-controller="landingCtrl"
+        fastscope="../creative.php"
+        fastscope-enabled="!isStatic"
+        fastscope-id="search-ng"
+        fastscope-method="post"
+        fastscope-params="searchParams"
+        fastscope-form-url-encoded="true"
+        fastscope-data-name="searchResponse"
+        fastscope-success-callback="fsSuccess(id, method, data, code, headers)"
+        fastscope-error-callback="fsError(id, method, data, code, headers)"
+        fastscope-watch="searchParams"
+        tag-plan="sephora201712"
+        tag-plan-type="adv_ban_imp"
+        tag-plan-page="inter"
+        ng-class="{'demo-type-left': demo}">
+<div class="creative">
+    <div ng-click="redirectLanding('landing/index.html')">
+        <section>
+            <img class="product" src="ressources/images/inter/product.png">
+            <div class="layer firts">
+                <img src="ressources/images/inter/title-sephora.png" alt="">
+                <img class="mugler" src="ressources/images/inter/mugler-logo.jpg" alt="">
+            </div>
+            <div class="layer third">
+                <div class="head">
+                    <img src="ressources/images/inter/title.png">
+                </div>
+                <button>
+                    <span>UNE SURPRISE VOUS ATTEND</span>
+                    <svg version="1.1" id="Premier_plan" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.6 29.5"
+                         style="enable-background:new 0 0 19.6 29.5;" xml:space="preserve">
+                                <path d="M1.6,4.4L12,15L1.6,25.6L5,29l13.7-14L5,1L1.6,4.4z"/>
+                            </svg>
+                </button>
+            </div>
+        </section>
+        <footer>
+            <img src="ressources/images/inter/footer.jpg">
+        </footer>
+    </div>
+</div>
+
+<script>
+    // new Image().src = ''.replace('[RANDOM]', new Date().getTime());
+
+</script>
+<!--<script src="mraid.js"></script>-->
+<!--<SCRIPT TYPE="text/javascript" SRC="https://pixel.adsafeprotected.com/rjss/st/86036/15425878/skeleton.js"></SCRIPT>-->
+<!--<NOSCRIPT>-->
+<!--<IMG SRC="https://pixel.adsafeprotected.com/rfw/st/86036/15425877/skeleton.gif" BORDER=0 WIDTH=1 HEIGHT=1 ALT="">-->
+<!--</NOSCRIPT>-->
+<!--</body>-->
+</html>

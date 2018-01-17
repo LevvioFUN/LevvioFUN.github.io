@@ -1,0 +1,500 @@
+/* ====================== */
+/* ===  IMPORTATIONS  === */
+/* ====================== */
+
+@import url("fonts.css");
+
+
+/* =================== */
+/* ===  STRUCTURE  === */
+/* =================== */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px 1px rgba(0,0,0,0.005);
+
+	margin: 0px; padding: 0px; outline: none; list-style: none;
+	}
+
+html,
+body { width: 100%; height: 100%; overflow: hidden;}
+
+body {
+	font-size: 14px;
+	color: rgba(0,0,0,0.99);
+
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	 font-family: 'GOTHIC';
+	}
+
+	body > div > div { width: 320px; height: 480px; margin: auto; overflow: hidden; position: relative; display: flex;}
+
+	/* iPhone 4S */
+	@media only screen
+	and (min-device-width : 320px)
+	and (min-device-height : 480px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div { width: 100%; height: 100%;}
+		}
+
+	/* iPhone 5/5S */
+	@media only screen
+	and (min-device-width : 320px)
+	and (min-device-height: 568px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div  { width: 100%; height: 100%;}
+		}
+
+	/* iPhone 6 */
+	@media only screen
+	and (min-device-width : 375px)
+	and (min-device-height: 667px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div  { width: 100%; height: 100%;}
+		}
+
+	/* iPhone 6 Plus */
+	@media only screen
+	and (min-device-width : 410px)
+	and (min-device-height : 730px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div  { width: 100%; height: 100%;}
+		}
+
+	/* Options d'affichage */
+	.horchamp { position: absolute; left: -10000px; top: -10000px;}
+	.textimage { text-indent: -10000px;}
+
+	a { text-decoration: none;}
+
+
+
+
+
+/* ================= */
+/* ===  CONTENU  === */
+/* ================= */
+
+header{
+	position: absolute;
+	width: 100%;
+	top: 0;
+	left: 0;
+	text-align: center;
+	z-index: 0;
+}
+
+header img{
+	width: 85%;
+	margin: 23px auto;
+}
+
+section {
+	position: relative;
+	left: 0;
+	top: 0;
+	bottom: 17%;
+	z-index: 0;
+	text-align: center;
+	display: flex;
+	height: 100%;
+	width: 100%;
+	background-color: #fff;
+}
+
+section .product {
+	width: 53%;
+	height: 55%;
+	top: 20%;
+	left: 25%;
+	display: inline-block;
+	position: absolute;
+	z-index: 50;
+	animation-delay: 0s, 5s;
+	animation-duration: 5s, 5s;
+	animation-name: product, product2;
+	animation-timing-function: linear;
+	animation-iteration-count: 1, infinite;
+	animation-fill-mode: forwards;
+}
+@-webkit-keyframes product {
+	0% {
+		transform: scale(0);
+		top: 30%;
+	}
+	35% {
+		transform: scale(0);
+		top: 30%;
+	}
+	50% {
+		transform: scale(1);
+		top: 30%;
+	}
+	65% {
+		top: 30%;
+	}
+	100% {
+		transform: scale(1);
+		top: 20%;
+	}
+
+}
+@-webkit-keyframes product2 {
+	0% {
+		top: 20%;
+	}
+	50% {
+		top: 25%;
+	}
+	100% {
+		top: 20%;
+	}
+
+}
+div.layer{
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background-repeat: no-repeat;
+	top: 0;
+	left: 0;
+}
+div.layer.firts{
+	background: #fff;
+	background-position: center  bottom;
+    background-size: cover;
+    z-index: 6;
+    opacity: 0;
+	animation-delay: 0s;
+	animation-duration: 3.8s;
+	animation-name: first_layer;
+	animation-timing-function: linear;
+}
+
+div.layer.second{
+	background-image: url('../images/inter/model.jpg');
+	background-position:  center top -50px;
+    background-size: cover;
+    z-index: 3;
+    opacity: 0;
+    width: 150%;
+    animation: second-layer 1.5s ease-in;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 2.5s;
+}
+
+div.layer.firts img {
+    width: 60%;
+    margin-top: 9%;
+	opacity: 0;
+	animation-delay: .5s;
+	animation-duration: 4s;
+	animation-name: title;
+	animation-timing-function: linear;
+
+}
+
+div.layer.firts .mugler {
+	width: 45%;
+	margin-top: 20px;
+	animation-delay: 1.5s;
+	animation-duration: 2.9s;
+	animation-name: title;
+	animation-timing-function: linear;
+}
+
+
+div.layer.third  {
+    background: url(../images/inter/background.jpg) center/cover no-repeat;
+    z-index: 5;
+    text-align: center;
+    opacity: 1;
+	animation: third-layer 1s ease-in;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 5s;
+}
+div.layer.third .head img{
+	width: 85%;
+	margin-top:25px;
+}
+div.layer.third p{
+	display: block;
+	text-align: center;
+	text-transform: uppercase;
+	font-size: 16px;
+	color: #000;
+
+}
+
+div.layer.third p.top{
+	margin-top: 20%;
+	padding: 10px;
+}
+div.layer.third p.footer{
+	margin-top: -15%;
+
+}
+
+div.layer.third p strong{
+	font-weight: 900;
+}
+
+div.layer.third span.small{
+	font-size: 5px;
+	display: block;
+	text-transform: uppercase;
+}
+
+div.layer.third button{
+	width: 85%;
+	height: 6%;
+	position: relative;
+	text-align: center;
+	color: #000;
+	border-radius: 50px;
+	border:none;
+	display: inline-flex;
+	margin: 10px auto;
+	background-color: #fff;
+	animation-delay: 0;
+	animation-duration: 5s;
+	animation-name: button;
+	animation-timing-function: linear;
+	opacity: 1;
+}
+
+div.layer.third button span{
+	margin: auto;
+	font-size: 18px;
+	font-weight: 900;
+	padding-right: 10px;
+	text-transform: uppercase;
+}
+
+div.layer.third button svg{
+	position: absolute;
+	top: 50%;
+	width: 15px;
+	margin-top: -12px;
+	fill: #000;
+	right: 15px;
+	animation: rightIn .9s;
+	animation-iteration-count: infinite;
+}
+
+
+footer{
+	position: absolute;
+	width: 100%;
+	height: 17%;
+	overflow: hidden;
+	left: 0;
+	bottom: 0;
+	display: flex;
+	z-index: 99;
+	background-color: #fff;
+}
+footer img{
+	width: 100%;
+}
+
+/* iPhone 4S */
+@media only screen
+and (min-device-width : 320px)
+and (min-device-height : 480px)
+and (orientation : portrait) {
+		}
+
+/* iPhone 5/5S */
+@media only screen
+and (min-device-width : 320px)
+and (min-device-height: 568px)
+and (orientation : portrait) {
+	div.layer.third img{
+		margin-top: 25%;
+	}
+	div.layer.third button {
+		bottom: 20%;
+		left: 7%;
+		position: absolute;
+		z-index: 50;
+	}
+
+	div.layer.third button span{
+		font-size: 13px;
+	}
+	div.layer.third button svg{
+		position: absolute;
+		top: 50%;
+		width: 13px;
+		margin-top: -10px;
+		fill: #000;
+		right: 15px;
+		animation: rightIn .8s;
+		animation-iteration-count: infinite;
+	}
+}
+
+/* Nexus 5 */
+@media only screen
+and (min-device-width : 360px)
+and (min-device-height: 640px)
+and (orientation : portrait) {
+
+	div.layer.third img{
+		width: 60%;
+		margin-top: 23%;
+	}
+
+	div.layer.third button {
+		bottom: 20%;
+		left: 7%;
+		position: absolute;
+		z-index: 50;
+	}
+
+	div.layer.third button span{
+		font-size: 15px;
+	}
+}
+
+/* iPhone 6 */
+@media only screen
+and (min-device-width : 375px)
+and (min-device-height: 667px)
+and (orientation : portrait) {
+
+	div.layer.third img{
+		width: 65%;
+		display: inline-block;
+		margin-top: 30%;
+	}
+
+	div.layer.third p{
+		font-size: 18px;
+	}
+
+	div.layer.third span.small{
+		font-size: 10px;
+	}
+
+	div.layer.third button span{
+		font-size: 16px;
+	}
+
+}
+
+/* iPhone 6 Plus nexus 5x*/
+@media only screen
+and (min-device-width : 410px)
+and (min-device-height : 730px)
+and (orientation : portrait) {
+
+	div.layer.third p{
+		font-size: 18px;
+
+	}
+	div.layer.third img{
+		margin-top: 24%;
+		margin-bottom: -4%;
+	}
+	div.layer.third span.small{
+		font-size: 16px;
+	}
+
+	div.layer.third button{
+		margin: -5px auto;
+	}
+}
+@-webkit-keyframes first_layer {
+	0% {
+		opacity: 1;
+		height: 100%;
+	}
+	80% {
+		height: 100%;
+	}
+	99% {
+		opacity: 1;
+	}
+	100% {
+		height: 0;
+	}
+}
+@-webkit-keyframes title {
+	0% {
+		opacity: 0;
+	}
+	20% {
+		opacity: 1;
+	}
+	65% {
+		opacity: 1;
+	}
+	73% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 0;
+	}
+}
+@-webkit-keyframes button {
+	0% {
+		transform: scale(2);
+		opacity: 0;
+	}
+	85% {
+		transform: scale(2);
+		opacity: 0;
+	}
+	100% {
+		transform: scale(1);
+		opacity: 1;
+	}
+}
+
+@keyframes rightIn {
+    to {
+        right: 8px;
+    }
+}

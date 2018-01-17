@@ -1,0 +1,1160 @@
+@import url("fonts.css");
+
+* {
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.005);
+    margin: 0px;
+    padding: 0px;
+    outline: none;
+    list-style: none;
+     font-family: 'GOTHIC';
+}
+
+html, body {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+body {
+    background: rgba(255, 255, 255, 0.99);
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.99);
+}
+
+body > div {
+    height: 100%;
+    max-width: 600px;
+    margin: auto;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -webkit-box;
+    display: flex;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    flex-direction: column;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+
+    
+}
+
+/* Options d'affichage */
+
+.horchamp {
+    position: absolute;
+    left: -10000px;
+    top: -10000px;
+}
+
+.textimage {
+    text-indent: -10000px;
+}
+
+.hideme {
+    display: none;
+}
+
+.hideme.opened {
+    display: block;
+}
+
+
+/* Boutons et liens */
+
+a, a:link {
+    text-decoration: none;
+}
+
+
+body > div > header {
+    width: 100%;
+    height: 5%;
+    min-height: 25px;
+    padding: 0px;
+    overflow: hidden;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    -webkit-box-ordinal-group: 1;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    top: 0;
+    position: fixed;
+    left: 0;
+    right: 0;
+    background: #000;
+    z-index: 1001;
+}
+
+body > div > header blockquote.left {
+    width: 35%;
+    height: 100%;
+    display: block;
+    float: left;
+}
+
+body > div > header blockquote.left  a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+body > div > header blockquote.left img, 
+body > div > header blockquote.left a svg{
+    max-width: 90%;
+    max-height: 70%;
+    margin: auto;
+
+}
+body > div > header blockquote.left svg{
+    fill: #fff;
+    width: 90%;
+}
+/* Indicateur de proximite */
+
+body > div > header blockquote.right {
+    width: 65%;
+    height: 100%;
+    padding-right: 3px;
+    display: flex;
+    float: left;
+    text-align: right;
+    color: #fff;
+}
+
+
+body > div > header blockquote p {
+    margin: auto;
+    margin-right: 0;
+    font-size: 9px;
+    display: inline-block;
+    width: 85%;
+    vertical-align: middle;
+}
+body > div > header blockquote p span.distance{
+    color:#fff;
+    font-weight: 900;
+    font-family: 'GOTHICB';
+    font-size: 11px;
+}
+body > div > header blockquote p span.name{
+    text-transform: uppercase;
+}
+
+body > div > header blockquote.right  a {
+    color:#E42413;
+    display: inline-block;
+    width: 11%;
+    vertical-align: middle;
+    margin: auto;
+   
+}
+
+@keyframes proximite {
+    to { transform: rotate(360deg);}
+}   
+
+body > div > header blockquote.right a img {
+    width: 90%;
+    animation: proximite .7s ease-in;
+    animation-iteration-count: 11;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+}
+
+
+/* iPhone 4S */
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (orientation: portrait) {
+
+}
+
+/* iPhone 5/5S */
+@media only screen and (min-device-width: 320px) and (min-device-height: 568px) and (orientation: portrait) {
+}
+
+/* iPhone 6 */
+@media only screen and (min-device-width: 375px) and (min-device-height: 667px) and (orientation: portrait) {
+    body > div > header blockquote p {
+        font-size: 10px;
+    }
+}
+
+/* iPhone 6 Plus */
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (orientation: portrait) {
+     body > div > header blockquote p {
+        font-size: 11px;
+    }
+}
+
+
+/* =============== */
+/* === CONTENU === */
+/* =============== */
+
+body > div > section {
+    width: 100%;
+    overflow: hidden;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    -webkit-box-ordinal-group: 1;
+    order: 0;
+    -webkit-flex: 1 1 auto;
+    -ms-flex: 1 1 auto;
+    -webkit-box-flex: 1;
+    flex: 1 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    top: 5%;
+    position: absolute;
+    bottom: 7%;
+    left: 0;
+    right: 0;
+    height: 88%;
+    padding-top: 35px;
+}
+
+section > div {
+    height: 100%;
+    position: relative;
+}
+
+/* Destination */
+
+section > #destination {
+    width: 100%;
+    height: 35px;
+    position: absolute;
+    color:#000;
+    z-index: 3;
+    max-width: 600px;
+    margin: auto;
+    display: flex;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-transform: uppercase;
+    background: url('../images/landing/icon_tracker.svg') #fff ;
+    background-repeat: no-repeat;
+    background-position: left 4px center;
+    background-size: 24px;
+}
+
+section > #destination > p {
+    width: 75%;
+    line-height: 36px;
+    display: inline-flex;
+    flex-wrap: wrap;
+    padding-left: 30px;
+    margin: auto 0;
+}
+
+section > #destination > p span {
+    display: block;
+    font-size: 9px;
+    line-height: 12px;
+    width: 100%;
+}
+section > #destination a {
+    display: inline-flex;
+    border-radius: 50px;
+    position: relative;
+    width: 22%;
+    margin: auto;
+    color: #fff;
+    background-color: #d50032;
+    height: 25px;
+    text-align: center;
+
+}
+section > #destination a svg{
+    width: 10px;
+    position: absolute;
+    fill: #fff;
+    right: 10px;
+    top: 50%;
+    margin-top: -5px;
+    animation: destination-arrow  1s ease-in;
+    animation-iteration-count: infinite;
+    animation-fill-mode: forwards;
+    animation-delay: .5s;
+
+}
+
+
+@keyframes destination-arrow {
+    to { right: 5px;}
+}   
+
+
+section > #destination  a span{
+    margin: auto;
+    padding-right: 10px;
+    font-size: 12px;
+}
+
+/* iPhone 6 */
+@media only screen and (min-device-width: 375px) and (min-device-height: 667px) and (orientation: portrait) {
+    body > div > section {
+        padding-top: 36px;
+    }
+    section  #destination {
+        height: 36px;
+    }
+    section  #destination > p span {
+        font-size: 10px;
+        line-height: 14px;
+    }
+    section > #destination a {
+        width: 22%;
+    }
+}
+
+
+/* iPhone 6 Plus */
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (orientation: portrait) {
+    body > div > section {
+        padding-top: 40px;
+    }
+    section > #destination {
+        height: 40px;
+    }
+    section > #destination > p span {
+        font-size: 10px;
+        line-height: 12px;
+    }
+
+    section > #destination > p svg {
+        width: 25px;
+    }
+    body > div > header blockquote {
+        font-size: 18px;
+    }
+
+}
+
+body > div > nav {
+    width: 100%;
+    height: 7%;
+    margin: auto;
+    text-align: center;
+    -webkit-order: 0;
+    -ms-flex-order: 0;
+    -webkit-box-ordinal-group: 1;
+    order: 0;
+    -webkit-flex: 0 1 auto;
+    -ms-flex: 0 1 auto;
+    -webkit-box-flex: 0;
+    flex: 0 1 auto;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    align-self: auto;
+    background: #fff;
+    bottom: 0;
+    position: absolute;
+    top: auto;
+    left: 0;
+    right: 0;
+}
+
+body > div > nav > div {
+    height: 100%;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    -webkit-box-align: stretch;
+    align-items: stretch;
+}
+
+body > div > nav > div > a {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    height: 100%;   
+    display: flex;
+    border-right: solid 1px #000;
+    border-top: solid 4px #fff;
+}
+
+body > div > nav > div > a.showBtn {
+
+}
+
+body > div > nav > div > a:last-child {
+    border-right:none;
+}
+
+body > div > nav > div > a:first-child  span:last-child{
+    margin-left: 0;
+}
+
+body > div > nav > div > a:first-child  span:first-child{
+    margin-right: 3px;
+}
+body > div > nav > div > a svg {
+    fill: #000;
+    height: 40px;
+    vertical-align: middle;
+    margin-right: 2px;
+}
+
+body > div > nav > div > a span {
+    margin: auto;
+    display: inline-block;
+    font-weight: bold;
+    text-align: left;
+    color:#000;
+    text-transform: uppercase;
+     vertical-align: middle;
+}
+
+ body > div > nav > div > a.actif {
+    background: #d50032;
+    border-top: solid 4px #000;
+}
+
+body > div > nav > div > a:hover svg, body > div > nav > div > a:focus svg, body > div > nav > div > a.actif svg {
+    fill: #000;
+}
+
+body > div > nav > div > a:hover span, body > div > nav > div > a:focus span, body > div > nav > div > a.actif span {
+     color:#000;
+}
+
+
+/* iPhone 4S */
+
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (orientation: portrait) {
+
+    body > div > nav > div > a svg {
+        height: 23px;
+        width: 23px;
+    }
+    body > div > nav > div > a span {
+        font-size: 7px;
+        line-height: 10px;
+    }
+}
+
+
+/* iPhone 5/5S */
+
+@media only screen and (min-device-width: 320px) and (min-device-height: 568px) and (orientation: portrait) {
+
+}
+
+
+/* iPhone 6 */
+
+@media only screen and (min-device-width: 375px) and (min-device-height: 667px) and (orientation: portrait) {
+     body > div > nav > div > a span {
+        font-size: 7px;
+        line-height: 10px
+    }
+    body > div > nav > div > a svg {
+        height: 26px;
+        width: 26px;
+    }
+
+}
+
+
+/* iPhone 6 Plus */
+
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (orientation: portrait) {
+
+    body > div > nav > div > a span {
+        font-size: 9px;
+        line-height: 13px;
+    }
+
+}
+
+article.description {
+    text-align: center;
+    height: 100%;
+    width: 100%;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15) inset;
+}
+
+article.description img.logo{
+    width: 70%;
+    margin-top: 15px;
+}
+article.description  p{
+    display: block;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #000;
+}
+
+article.description  p.top{
+ 
+    padding: 10px;
+}
+article.description  p.footer{
+    margin-top: -13%;
+
+}
+
+article.description  p strong{
+    font-weight: 900;
+}
+
+article.description  img.product{
+    width: 70%;
+    display: inline-block;
+}
+
+article.description  span.small{
+    font-size: 8px;
+    display: block;
+    text-transform: uppercase;
+}
+
+article.description  button{
+    width: 70%;
+    height: 40px;
+    position: relative;
+    text-align: center;
+    color: #fff;
+    border-radius: 50px;
+    border:none;
+    display: inline-flex;
+    margin: 15px auto;
+    background-color: #000;
+}
+
+article.description  button span{
+    margin: auto;
+    font-size: 12px;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+     
+        
+/* iPhone 4S */
+@media only screen
+and (min-device-width : 320px)
+and (min-device-height : 480px)
+and (orientation : portrait) {
+        }
+
+/* iPhone 5/5S */
+@media only screen
+and (min-device-width : 320px)
+and (min-device-height: 568px)
+and (orientation : portrait) {
+
+    
+}   
+
+/* iPhone 6 */
+@media only screen
+and (min-device-width : 375px)
+and (min-device-height: 667px)
+and (orientation : portrait) {
+    article.description p{
+        font-size: 16px;
+    }
+    article.description  span.small{
+        font-size: 10px;
+    }
+
+    article.description  button span{
+        font-size: 14px;
+    }
+}
+
+/* iPhone 6 Plus */
+@media only screen
+and (min-device-width : 410px)
+and (min-device-height : 730px)
+and (orientation : portrait) {
+    article.description p{
+        font-size: 18px;
+    }
+    article.description  span.small{
+        font-size: 11px;
+    }
+
+    article.description  button span{
+        font-size: 16px;
+    }
+}
+
+
+/* Itineraire */
+
+section > div  #itineraire {
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+}
+
+section > div  #itineraire iframe {
+    border: 0px;
+    width: 100%;
+    height: 100%;
+}
+
+/* Store locator */
+
+section > div  #store-locator {
+    background: rgba(255, 255, 255, 0.99);
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: #000;
+    z-index: 4;
+}
+
+
+/* Store locator > Localisez-moi */
+
+section > div  #store-locator #liste {
+    height: 100%;
+}
+
+section > div #store-locator #liste > p {
+    height: 60px;
+    display: block;
+    width: 100%;
+    padding-top: 20px;
+    box-shadow: 0 3px 4px rgba(0, 0, 0, 0.15) inset;
+    border-bottom:solid 1px #ddd;
+   
+}
+
+section > div #store-locator #liste > p > a {
+    background: #000;
+    width: 120px;
+    margin: auto;
+    padding: 3px 5px;
+    display: block;
+    color: rgba(255, 255, 255, 0.99);
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    -o-border-radius: 25px;
+    -ms-border-radius: 25px;
+    border-radius: 25px;
+    text-align: center;
+}
+
+section > div #store-locator #liste > p > a svg {
+    fill: rgba(255, 255, 255, 0.99);
+    width: 15px;
+    vertical-align: middle;
+}
+
+section > div #store-locator #liste > p > a span {
+    font-size: 11px;
+    text-transform: uppercase;
+}
+
+
+/* Store locator > record-list*/
+
+section > div #store-locator #record-list ul {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: 60px;
+}
+
+
+/* Store locator > liste */
+
+section > div #store-locator .record-list {
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding-bottom: 60px;
+}
+
+section > div #store-locator .record-list li {
+    width: 100%;
+}
+
+section > div #store-locator .record-list li.odd a {
+    background-color: #fff;
+}
+
+section > div #store-locator .record-list li a {
+    border-bottom:solid 1px #ddd;
+    background-color: #fff;
+    color: #444;
+    z-index: 2;
+    margin: -1px;
+    padding: 15px;
+    
+    font-size: 16px;
+    width: 100%;
+    position: relative;
+    padding-right: 90px;
+    padding-left: 60px;
+    min-height: 80px;
+    display: block;
+}
+section > div #store-locator .record-list li a:first-child{
+    border-top:solid 1px #ddd;
+}
+
+section > div #store-locator .record-list li a svg,
+section > div #store-locator .record-list li a img {
+    position: absolute;
+    max-height: 98px;
+    left: 15px;
+    top: 0;
+    bottom: 0;
+    max-width: 40px;
+    margin: auto;
+}
+section > div #store-locator .record-list li a svg{
+    fill: #000!important;
+}
+
+
+section > div #store-locator .record-list li a h2 {
+    color: #000;
+    font-weight: 500;
+    line-height: 1.2;
+    font-size: 12px;
+}
+
+section > div #store-locator .record-list li a h4 {
+    display: block;
+    width: 100%;
+    margin: 0px;
+    font-size: 9pt;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    font-weight: 400;
+}
+
+section > div #store-locator .record-list li a h4 p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+section > div #store-locator .record-list li .right {
+    bottom: 0;
+    margin: auto;
+    width: 65px;
+    text-align: center;
+    display: block;
+    position: absolute;
+    right: 15px;
+    height: 100%;
+    color: #000;
+    text-transform: none;
+    font-weight: normal;
+    font-style: normal;
+    font-variant: normal;
+    font-size: 0;
+    top: 0;
+    height: 20px;
+}
+
+section > div #store-locator .record-list li .right > span {
+    background: #000;
+    padding:  5px;
+    display: inline-block;
+    position: relative;
+    top: 0px;
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.99);
+    -webkit-border-top-left-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -moz-border-radius-topleft: 5px;
+    -moz-border-radius-bottomleft: 5px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin: auto;
+    width: 100%;
+    font-weight: 800;
+    height: 100%;
+}
+
+section > div #store-locator .record-list li .right > span > span::after {
+    border: solid transparent;
+    border-color: rgba(0, 0, 0, 0);
+    border-left-color: #000;
+    border-width: 10px;
+    content: "";
+    width: 0px;
+    height: 0px;
+    margin-top: -10px;
+    position: absolute;
+    left: 100%;
+    top: 50%;
+    pointer-events: none;
+}
+
+
+/* iPhone 4S */
+
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (orientation: portrait) {}
+
+
+/* iPhone 5/5S */
+
+@media only screen and (min-device-width: 320px) and (min-device-height: 568px) and (orientation: portrait) {}
+
+
+/* iPhone 6 */
+
+@media only screen and (min-device-width: 375px) and (min-device-height: 667px) and (orientation: portrait) {}
+
+
+/* iPhone 6 Plus */
+
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (orientation: portrait) {}
+
+
+
+/* Magasin selectionne */
+
+section > div #store-locator #magasin {
+    background: rgba(255, 255, 255, 0.99);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: 10;
+    text-align: center;
+}
+
+section > div #store-locator #magasin h3 {
+    padding: 20% 0px 5% 0px;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+section > div #store-locator #magasin > p {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+section > div #store-locator #magasin > p span:nth-last-child(3) {
+    display: block;
+}
+
+section > div #store-locator #magasin a {
+    height: 50px;
+    display: inline-block;
+    line-height: 50px;
+    vertical-align: top;
+    text-transform: uppercase;
+}
+
+section > div #store-locator #magasin a svg {
+    height: 20px;
+}
+
+section > div #store-locator #magasin a span {
+    height: 50px;
+    padding: 0px 10px;
+    display: inline-block;
+}
+
+
+/* Retour */
+
+section > div #store-locator #magasin a.fermer-magasin {
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    padding-right: 10px;
+}
+
+section > div #store-locator #magasin a.fermer-magasin svg {
+    fill: rgba(0, 0, 0, 0.2);
+    margin: 0px 10px;
+}
+
+section > div #store-locator #magasin a.fermer-magasin span {
+    color: rgba(0, 0, 0, 0.2);
+}
+
+
+/* Mettre a jour */
+
+section > div #store-locator #magasin a.maj-boutique {
+    background: rgba(14, 78, 150, 0.8);
+    margin-left: 60px;
+    padding-left: 10px;
+}
+
+section > div #store-locator #magasin a.maj-boutique span {
+    color: rgba(255, 255, 255, 0.99);
+}
+
+section > div #store-locator #magasin a.maj-boutique svg {
+    fill: rgba(255, 255, 255, 0.99);
+    margin: 0px 10px;
+}
+
+
+/* iPhone 4S */
+
+@media only screen and (min-device-width: 320px) and (min-device-height: 480px) and (orientation: portrait) {
+    section > div #store-locator #magasin h3 {
+        font-size: 15px;
+    }
+    section > div #store-locator #magasin > p {
+        margin-bottom: 15px;
+        font-size: 15px;
+    }
+    section > div #store-locator #magasin a {
+        height: 25px;
+        margin-bottom: 20px;
+        display: inline-block;
+        line-height: 20px;
+    }
+    section > div #store-locator #magasin a svg {
+        height: 15px;
+    }
+    section > div #store-locator #magasin a span {
+        height: 20px;
+        padding: 5px 10px;
+        display: inline-block;
+    }
+    section > div #store-locator #magasin a.fermer-magasin {
+        line-height: 27px;
+    }
+    section > div #store-locator #magasin a.fermer-magasin svg {
+        margin: 0px -3px 0px 5px;
+    }
+    section > div #store-locator #magasin a.fermer-magasin span {
+        display: none;
+    }
+    section > div #store-locator #magasin a.maj-boutique {
+        margin-left: 0px;
+        line-height: 30px;
+    }
+}
+
+
+/* iPhone 5/5S */
+
+@media only screen and (min-device-width: 320px) and (min-device-height: 568px) and (orientation: portrait) {}
+
+
+/* iPhone 6 */
+
+@media only screen and (min-device-width: 375px) and (min-device-height: 667px) and (orientation: portrait) {}
+
+
+/* iPhone 6 Plus */
+
+@media only screen and (min-device-width: 414px) and (min-device-height: 736px) and (orientation: portrait) {}
+
+.btn-select-magasin {
+    text-decoration: none;
+    background: #000;
+    padding: 1px 10px;
+    border-radius: 4px;
+    font-size: 10pt;
+    color: white;
+    margin-left: 10px;
+    text-transform: uppercase;
+    font-weight: 400;
+    width: 240px;
+    display: inline-block;
+    vertical-align: top;
+    line-height: 1!important;
+}
+
+.btn-select-magasin svg {
+    fill: white;
+    vertical-align: -3px;
+}
+
+.message-popup {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.38);
+    z-index: 9999;
+    display: none;
+}
+
+.message-popup.open {
+    display: block;
+}
+
+.message-popup .modal {
+    position: relative;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 5px;
+    max-width: 80%;
+    max-height: 60%;
+    margin-top: 55%;
+    text-align: center;
+}
+
+.message-popup .modal button {
+    border-radius: 50px;
+    color: #fff;
+    width: 70%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 36px;
+    background-color: #e20a5f;
+    border: solid 1px rgb(246, 178, 32);
+    font-family: "montserratbold";
+}
+
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  .owl-carousel .owl-stage {
+    position: relative;
+    height: 100%;
+    -ms-touch-action: pan-Y; }
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    height: 100%;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+ 
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    cursor: hand;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    display: none; }
+  .owl-carousel.owl-drag .owl-item {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+
+
