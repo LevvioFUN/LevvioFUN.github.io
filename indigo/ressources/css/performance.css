@@ -1,0 +1,102 @@
+body.demo-type-left{
+	display: block;
+	text-align: center;
+}
+
+body.demo-type-left  > div{ 
+	width: 48%; 
+	height: 100%;
+	display: inline-flex;
+	padding: 10px;
+	box-sizing: border-box;
+	vertical-align: middle;
+
+}
+
+body.demo-type-left  > div.demo{
+
+	background-color: #fff;
+    font-family: arial;
+    overflow-y:auto;
+    display: inline-block;
+    text-align: center;
+    border-left: solid 2px #000;
+
+}
+
+body.demo-type-left  > div.demo div.content{
+	width: 100%;
+	height: 50%;
+	display: flex;
+	flex-wrap: wrap;
+}
+
+body.demo-type-left  > div.demo div.content .content-imp{
+	width: 100%;
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	overflow-y: auto;
+	min-height: 50px;
+	max-height: 80%;
+}
+body.demo-type-left  > div.demo div.content button.add-link{
+	width: 140px;
+	position: relative;
+	display: block;
+	height: 35px;
+}
+body.demo-type-left  > div.demo div.content .row{
+	display: flex;
+	width: 100%;
+	margin: 10px auto;
+	height: 120px;
+	flex-wrap: wrap;
+}
+body.demo-type-left  > div.demo div.content .row div{
+	width: 100%;
+	display: flex;
+
+}
+body.demo-type-left  > div.demo div.content .row output p.red{
+	color: red;
+}
+body.demo-type-left  > div.demo div.content .row output{
+	width: 100%;
+	height: 70px;
+	overflow-y: auto;
+	font-size: 12px;
+	text-align: left;
+}
+body.demo-type-left  > div.demo div.content .row input,
+body.demo-type-left  > div.demo div.content  input{
+	height: 30px;
+	width: 80%;
+
+	margin: auto;
+	margin-left: 0;
+}
+
+body.demo-type-left  > div.demo div.content span.circle,
+body.demo-type-left  > div.demo div.content .row span.circle{
+	display: block;
+    border: solid 1px #000;
+    border-radius: 15px;
+    width: 30px;
+    height: 30px;
+    margin: auto;
+}
+
+body.demo-type-left  > div.demo div.content  input,
+body.demo-type-left  > div.demo div.content span.circle{
+	margin-top: 0;
+}
+
+body.demo-type-left  > div.demo div.content p{
+	
+	margin: auto;
+	height: auto;
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}

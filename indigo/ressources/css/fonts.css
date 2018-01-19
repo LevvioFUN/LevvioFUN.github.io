@@ -1,0 +1,33 @@
+@font-face {
+    font-family: 'IndigoSans-Bold';
+    src: url('../xtra/IndigoSans-Bold.eot');
+    src: url('../xtra/IndigoSans-Bold.ttf');
+    src: url('../xtra/IndigoSans-Bold.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'IndigoSans-ExtraLight';
+    src: url('../xtra/IndigoSans-ExtraLight.eot');
+    src: url('../xtra/IndigoSans-ExtraLight.ttf');
+    src: url('../xtra/IndigoSans-ExtraLight.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IndigoSans-Light';
+    src: url('../xtra/IndigoSans-Light.eot');
+    src: url('../xtra/IndigoSans-Light.ttf');
+    src: url('../xtra/IndigoSans-Light.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'IndigoSans-Regular.eot';
+    src: url('../xtra/IndigoSans-Regular.eot');
+    src: url('../xtra/IndigoSans-Regular.ttf');
+    src: url('../xtra/IndigoSans-Regular.woff');
+    font-weight: normal;
+    font-style: normal;
+}

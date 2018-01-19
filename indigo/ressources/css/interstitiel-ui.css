@@ -1,0 +1,570 @@
+/* ====================== */
+/* ===  IMPORTATIONS  === */
+/* ====================== */
+
+@import url("fonts.css");
+
+
+/* =================== */
+/* ===  STRUCTURE  === */
+/* =================== */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px 1px rgba(0,0,0,0.005);
+
+	margin: 0px; padding: 0px; outline: none; list-style: none;
+	}
+
+html,
+body { width: 100%; height: 100%; overflow: hidden;}
+
+body {
+	font-size: 14px;
+	color: rgba(0,0,0,0.99);
+
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+    font-family: 'Montserrat-Light';
+	}
+
+	body > div > div { width: 320px; height: 480px; margin: auto; overflow: hidden; position: relative; display: flex;}
+
+	/* iPhone 4S */
+	@media only screen
+	and (min-device-width : 320px)
+	and (min-device-height : 480px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div { width: 100%; height: 100%;}
+		}
+
+	/* iPhone 5/5S */
+	@media only screen
+	and (min-device-width : 320px)
+	and (min-device-height: 568px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div  { width: 100%; height: 100%;}
+		}
+
+	/* iPhone 6 */
+	@media only screen
+	and (min-device-width : 375px)
+	and (min-device-height: 667px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div  { width: 100%; height: 100%;}
+		}
+
+	/* iPhone 6 Plus */
+	@media only screen
+	and (min-device-width : 410px)
+	and (min-device-height : 730px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div  { width: 100%; height: 100%;}
+		}
+
+	/* Options d'affichage */
+	.horchamp { position: absolute; left: -10000px; top: -10000px;}
+	.textimage { text-indent: -10000px;}
+
+	a { text-decoration: none;}
+
+/* ================== */
+/* ===  GEOLAYER  === */
+/* ================== */
+.geolayer {
+	width: 100%;
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 10%;
+	z-index: 3;
+	text-align: center;
+	background-color: #fff;
+    /*background: url(../images/inter/BG_geolayer.png) bottom/contain no-repeat #fff;*/
+	height: 90%;
+	color: #000;
+	animation: geolayer 1s 3s ease-in forwards;
+}
+
+.geolayer .geo {
+	display: block;
+	height: 36%;
+	width: 150%;
+	left: 0;
+	position: absolute;
+	bottom: 0;
+	animation: geo 4s ease-in forwards;
+}
+.geolayer .geo2 {
+	display: block;
+	height: 25%;
+	width: 150%;
+	left: 0;
+	position: absolute;
+	bottom: -25%;
+	animation: geo 4s ease-in forwards;
+	z-index: -1;
+	background-color: #fff;
+	transform: skewY(-90deg);
+	clip-path: polygon(0 0, 100% 0, 100% 30%, -15% 100%);
+}
+.geolayer .geo2 img {
+	position: absolute;
+	top: -250%;
+	left: 0;
+}
+
+.logo {
+	width: 66%;
+	margin-top: 12%;
+	height: 13%;
+	margin-left: 6%;
+}
+
+.tagline {
+    position: absolute;
+    width: 75%;
+	right: 0;
+    top: 20%;
+    color: #722182;
+    font-size: 5vw;
+	font-family: 'IndigoSans-Bold', sans-serif;
+}
+
+.tagline span {
+    font-style: italic;
+}
+
+.txt {
+	font-family: 'IndigoSans-Light', sans-serif;
+    width: 100%;
+    position: absolute;
+    top: 32%;
+    font-size: 7vw;
+}
+
+.name-text {
+	top: 51%;
+	animation: fideIn .6s .2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 1.2s;
+	opacity: 0;
+}
+
+.name-text span {
+	text-transform: uppercase;
+}
+
+.distance {
+	position: absolute;
+	display: block;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	top: 37%;
+	z-index: 5;
+	animation: fideIn .6s 0.5s forwards;
+	opacity: 0;
+	color: #b6197f;
+	font-size: 19vw;
+	font-family: 'IndigoSans-Bold', sans-serif;
+}
+
+.pine {
+	position: absolute;
+	width: 20%;
+	left: 40%;
+	top: 60%;
+	z-index: 9;
+    animation: fideIn .2s 0.7s 1 forwards, bounceInUp .6s 0.7s;
+	opacity: 0;
+}
+
+
+/* ================= */
+/* ===  CONTENU  === */
+/* ================= */
+.main_section {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 0;
+	text-align: center;
+	width: 100%;
+	height: 90%;
+    background-color: #fff;
+	background-image: url(../images/inter/bg.jpg);
+	background-size: 100% 100%;
+}
+.main_section .ban {
+	position: absolute;
+	bottom: 19%;
+	width: 70%;
+	left: 15%;
+	opacity: 0;
+	animation: ban 1s forwards;
+	animation-delay: 6.7s;
+}
+.main_section .ban img{
+	width: 100%;
+}
+.btn_CTA  {
+    display: flex;
+    width: 50%;
+    height: 9%;
+    position: absolute;
+    bottom: 6%;
+    right: 25%;
+    border: none;
+    background: #b6197f;
+    text-transform: uppercase;
+    z-index: 6;
+    color: #fff;
+}
+
+.rect-left {
+	height: 0;
+	width: 5%;
+	background: #b6197f;
+	position: absolute;
+	bottom:24%;
+	left: 6%;
+	animation: left 1s forwards;
+	animation-delay: 4s;
+}
+.rect-top {
+	height: 3%;
+	width: 0;
+	background: #b6197f;
+	position: absolute;
+	top:6%;
+	left: 6%;
+	animation: top 1s forwards;
+	animation-delay: 4.9s;
+}
+.rect-right {
+	height: 0;
+	width: 5%;
+	background: #b6197f;
+	position: absolute;
+	top:6%;
+	right: 6%;
+	animation: left .9s forwards;
+	animation-delay: 5.7s;
+}
+.rect-bottom-1 {
+	height: 3%;
+	background: #b6197f;
+	position: absolute;
+	bottom:24%;
+	right: 79%;
+	animation: bottom-1 .6s forwards;
+	animation-delay: 3.5s;
+}
+.rect-bottom-2 {
+	height: 3%;
+	width: 0;
+	background: #b6197f;
+	position: absolute;
+	bottom:24%;
+	right: 6%;
+	animation: bottom-2 .7s forwards;
+	animation-delay: 6.49s;
+}
+@keyframes geo {
+	0% {
+		transform: translate(0px);
+	}
+	100% {
+		transform: translate(-70px);
+	}
+}
+@keyframes geolayer {
+	to { top: -3000px;}
+}
+@keyframes bounceInUp {
+	0% {
+		transform: scale(1, 1);
+	}
+	50% {
+		transform: scale(1.3, 1.3);
+	}
+	100% {
+		transform: scale(1, 1);
+	}
+}
+@keyframes ban {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+@keyframes left {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 70%;
+	}
+}
+@keyframes right {
+	0% {
+		height: 0;
+	}
+	100% {
+		height: 70%;
+	}
+}
+@keyframes top {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 88%;
+	}
+}
+@keyframes bottom-1 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 15%;
+	}
+}
+@keyframes bottom-2 {
+	0% {
+		width: 0;
+	}
+	100% {
+		width: 14%;
+	}
+}
+.btn_CTA span {
+    margin: auto;
+    padding-right: 16px;
+    font-size: 6vw;
+	font-family: 'IndigoSans-Regular.eot', sans-serif;
+}
+.btn_CTA svg {
+    position: absolute;
+    top: 24%;
+    width: 4.5vw;
+    right: 16px;
+    fill: #fff;
+    animation: rightIn-btn 1s;
+    animation-iteration-count: infinite;
+}
+rect{
+	animation: strokeDefaultRect 2s linear;
+	stroke-dasharray: 700;
+}
+@keyframes strokeDefaultRect{
+	0%{
+		stroke-dasharray: 500;
+	}
+	100%{
+		stroke-dasharray: 1000;
+	}
+}
+/* ====================== */
+/* ===  PIED DE PAGE  === */
+/* ====================== */
+
+.header {
+	background: rgba(255,255,255,0.99);
+	width: 100%;
+	min-height: 50px;
+	height: 10%;
+	z-index: 5;
+	display: flex;
+	border-bottom: 1px solid #ccc;
+}
+
+.compas{
+	width: 19%;
+    margin: auto 0;
+}
+
+.compas img {
+	display: block;
+	width: 75%;
+	margin: auto;
+}
+
+.address {
+    width: 55%;
+    margin: auto 5px;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #000;
+	font-family: 'IndigoSans-Light', sans-serif;
+}
+
+.address p:first-child {
+	font-weight: bold;
+}
+
+/* DCO */
+.arrow {
+	width: 28%;
+    display: flex;
+    color: #fff;
+    height: 100%;
+}
+
+.arrow-span {
+	background-color: #b6197f;
+	width: 90%;
+	border-radius: 50px;
+	height: 70%;
+	margin: auto;
+    margin-left: 0;
+	position: relative;
+	font-weight: 900;
+}
+
+.text, .time {
+	position: absolute;
+	left: 0;
+	top: 1%;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+}
+
+.text {
+	text-transform: uppercase;
+	animation: fideOut .2s 3.5s 1 forwards;
+	opacity: 1;
+}
+
+.text span {
+	font-size: 3.5vw;
+	margin: auto;
+    padding-right: 10px;
+}
+.text .vais {
+	font-family: 'IndigoSans-ExtraLight', sans-serif;
+}
+
+.text svg {
+	width: 8px;
+    fill: #fff;
+    display: inline-block;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    margin-top: -6px;
+    animation: arrow_dco_move .9s infinite;
+}
+
+.time {
+	animation: fideIn .2s 3.5s forwards;
+	opacity: 0;
+}
+
+.time span {
+	padding-right: 0;
+    margin: auto;
+	font-size: 4.5vw;
+	font-family: 'IndigoSans-Light', sans-serif;
+}
+
+
+
+/* iPhone 4S */
+@media only screen and (min-device-width : 320px) and (min-device-height : 480px) and (orientation : portrait) {}
+
+/* iPhone 5/5S */
+@media only screen and (min-device-width : 320px) and (min-device-height: 568px) and (orientation : portrait) {}
+
+/* iPhone 6 */
+@media only screen and (min-device-width : 375px) and (min-device-height: 667px) and (orientation : portrait) {}
+
+/* iPhone 6 Plus */
+@media only screen and (min-device-width : 414px) and (min-device-height : 736px) and (orientation : portrait) {}
+
+
+
+@keyframes arrow_dco_move {
+	to { right: 9px;}
+}
+
+@keyframes rightIn {
+	to { right: 11px;}
+}
+
+@keyframes rightIn-btn {
+    to { right: 10px; }
+}
+
+@keyframes fideOut {
+	to { opacity: 0;}
+}
+@keyframes fideIn {
+	to { opacity: 1;}
+}
+@keyframes infoRight {
+	to { right: 21%; opacity: 1}
+}
+
+@keyframes rightFadeIn {
+	to { right: 12%; opacity: 1}
+}
+@keyframes infoLeft {
+	to { left: 21%; opacity: 1}
+}
+@keyframes bganim {
+	to { background-position: right;}
+}
+@keyframes btnanim {
+    from {transform: scale(1.3);}
+	to { opacity: 1; transform: scale(1);}
+}
+@keyframes fadeIn {
+	to { opacity: 1;}
+}
+@keyframes fideTop {
+	to { background-color: rgba(255, 255, 255, 0.8);}
+}
