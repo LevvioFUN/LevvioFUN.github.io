@@ -1,0 +1,47 @@
+@import "mixin";
+
+/*---------------------------------------------HEADER------------------------------------------------------*/
+@mixin header {
+  @media screen and (max-width: 767px) {
+    .container-fluid {
+      background: url(../img/pattern.png);
+    }
+    .navbar {
+      background: #fff;
+      .container {
+        .row {
+          .navbar-header {
+            padding: 20px 0;
+            .navbar-brand {
+              padding-top: 16px;
+              color: #000;
+            }
+          }
+          .navbar-collapse {
+            text-align: center;
+            .navbar-nav {
+              li {
+                a {
+                  color: #000;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+/*---------------------------------------------SKILLS------------------------------------------------------*/
+@mixin skills {
+  @media screen and (max-width: 767px) {
+    .container {
+      .row {
+        .col-sm-4 {
+          margin-bottom: 75px;
+        }
+      }
+    }
+  }
+}

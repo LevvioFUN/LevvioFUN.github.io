@@ -1,0 +1,276 @@
+@font-face {
+  font-family: 'big_john';
+  src: url("../fonts/big_john.eot");
+  src: url("../fonts/big_john.eot") format("embedded-opentype"), url("../fonts/big_john.woff2") format("woff2"), url("../fonts/big_john.woff") format("woff"), url("../fonts/big_john.ttf") format("truetype"), url("../fonts/big_john.svg#big_john") format("svg"); }
+@font-face {
+  font-family: 'source_sans_pro_regular';
+  src: url("../fonts/source_sans_pro_regular.eot");
+  src: url("../fonts/source_sans_pro_regular.eot") format("embedded-opentype"), url("../fonts/source_sans_pro_regular.woff2") format("woff2"), url("../fonts/source_sans_pro_regular.woff") format("woff"), url("../fonts/source_sans_pro_regular.ttf") format("truetype"), url("../fonts/source_sans_pro_regular.svg#source_sans_pro_regular") format("svg"); }
+@font-face {
+  font-family: 'lobster';
+  src: url("../fonts/lobster.eot");
+  src: url("../fonts/lobster.eot") format("embedded-opentype"), url("../fonts/lobster.woff2") format("woff2"), url("../fonts/lobster.woff") format("woff"), url("../fonts/lobster.ttf") format("truetype"), url("../fonts/lobster.svg#lobster") format("svg"); }
+@keyframes drop {
+   0% {
+    top: 0;
+    opacity: 1; }
+   100% {
+    top: 25px;
+    opacity: 0; } }
+@keyframes drop {
+   0% {
+    top: 0;
+    opacity: 1; }
+   100% {
+    top: 25px;
+    opacity: 0; } }
+/*---------------------------------------------HEADER------------------------------------------------------*/
+/*---------------------------------------------SKILLS------------------------------------------------------*/
+h1, h2, h3, h4, ul {
+  margin: 0;
+  padding: 0; }
+
+body {
+  font-family: 'source_sans_pro_regular', sans-serif; }
+
+/*---------------------------------------------------------STYLES FROM NAMES SECTIONS---------------------------------------------------------*/
+.head_section {
+  text-align: center;
+  padding: 75px 15px; }
+  .head_section h2 {
+    font-family: 'big_john', sans-serif;
+    font-size: 26px;
+    letter-spacing: 2px; }
+    .head_section h2:after {
+      content: '';
+      height: 1px;
+      width: 100px;
+      background-color: #666;
+      display: block;
+      margin: 35px auto 35px; }
+
+/*---------------------------------------------------------HEADER---------------------------------------------------------*/
+header {
+  background: url(../img/cover.jpg) center/cover; }
+  header .navbar {
+    border: none;
+    box-shadow: none;
+    margin: 0;
+    background: transparent; }
+    header .navbar .container .row .navbar-header .navbar-brand {
+      font-family: 'lobster', sans-serif;
+      color: #fff;
+      font-size: 25px;
+      letter-spacing: 2px;
+      padding-top: 25px; }
+    header .navbar .container .row .navbar-collapse .navbar-nav li a {
+      font-size: 15px;
+      letter-spacing: 2px;
+      padding: 25px 13px !important;
+      box-sizing: border-box;
+      color: #fff; }
+    header .navbar .container .row .navbar-collapse .navbar-nav li:last-child {
+      padding-right: 0; }
+    header .navbar .container .row .navbar-collapse .navbar-nav li:hover a {
+      color: #e7746f; }
+  header .default {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+    transition: .7s;
+    border-radius: 0;
+    border: none; }
+    header .default .container .row .navbar-header .navbar-brand {
+      color: black; }
+    header .default .container .row .navbar-collapse .navbar-nav li a {
+      color: black; }
+  header .container-fluid {
+    background: url(../img/pattern.png); }
+    header .container-fluid .container .row .col-md-12 {
+      position: relative;
+      height: 100vh;
+      text-align: center;
+      color: #fff;
+      display: flex; }
+      header .container-fluid .container .row .col-md-12 .welcome {
+        margin: auto;
+        height: 160px;
+        width: 100%; }
+        header .container-fluid .container .row .col-md-12 .welcome h4 {
+          font-size: 16px; }
+        header .container-fluid .container .row .col-md-12 .welcome h1 {
+          margin: 20px 0;
+          font-family: 'big_john', sans-serif; }
+      header .container-fluid .container .row .col-md-12 .scroll_down {
+        position: absolute;
+        left: 50%;
+        margin-left: -25px;
+        bottom: 40px;
+        display: inline-block;
+        height: 50px;
+        width: 50px;
+        border: 2px solid #fff;
+        border-radius: 50%; }
+        header .container-fluid .container .row .col-md-12 .scroll_down a {
+          height: 100%;
+          width: 100%;
+          display: inline-block; }
+          header .container-fluid .container .row .col-md-12 .scroll_down a .drop {
+            position: relative;
+            animation: drop 1.2s linear infinite; }
+            header .container-fluid .container .row .col-md-12 .scroll_down a .drop .fa {
+              font-size: 25px;
+              color: #fff; }
+  @media screen and (max-width: 767px) {
+    header .container-fluid {
+      background: url(../img/pattern.png); }
+    header .navbar {
+      background: #fff; }
+      header .navbar .container .row .navbar-header {
+        padding: 20px 0; }
+        header .navbar .container .row .navbar-header .navbar-brand {
+          padding-top: 16px;
+          color: #000; }
+      header .navbar .container .row .navbar-collapse {
+        text-align: center; }
+        header .navbar .container .row .navbar-collapse .navbar-nav li a {
+          color: #000; } }
+
+/*---------------------------------------------------------SECTION - #WORKS---------------------------------------------------------*/
+#works .container .row .col-md-4 {
+  margin-bottom: 30px; }
+  #works .container .row .col-md-4 .work {
+    display: block;
+    background: url(../img/nyrius.png) center/cover;
+    height: 200px; }
+  #works .container .row .col-md-4 .work_2 {
+    background: url(../img/autor.png) center/cover; }
+  #works .container .row .col-md-4 .work_3 {
+    background: url(../img/bouncy.png) center/cover; }
+  #works .container .row .col-md-4 .work_4 {
+    background: url(../img/forest.png) center/cover; }
+  #works .container .row .col-md-4 .work_5 {
+    background: url(../img/bino.png) center/cover; }
+  #works .container .row .col-md-4 .work_6 {
+    background: #3c3c3c;
+    text-align: center;
+    vertical-align: middle;
+    color: #ccc;
+    line-height: 200px; }
+
+/*---------------------------------------------------------SECTION - #SKILLS---------------------------------------------------------*/
+#skills .container {
+  padding-bottom: 150px; }
+  #skills .container .row .col-sm-4 .progress {
+    width: 124px;
+    height: 124px;
+    line-height: 150px;
+    background: none;
+    margin: 0 auto;
+    box-shadow: none;
+    position: relative;
+    display: block; }
+    #skills .container .row .col-sm-4 .progress:after {
+      content: "";
+      width: 100%;
+      height: 100%;
+      border-radius: 50%;
+      border: 7px solid #fff;
+      position: absolute;
+      top: 0;
+      left: 0; }
+    #skills .container .row .col-sm-4 .progress .progress-bar {
+      width: 100%;
+      height: 100%;
+      background: none;
+      border: 7px solid #1abc9c;
+      position: absolute;
+      top: 0; }
+    #skills .container .row .col-sm-4 .progress .progress-left {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      z-index: 1; }
+      #skills .container .row .col-sm-4 .progress .progress-left .progress-bar {
+        left: 100%;
+        border-top-right-radius: 80px;
+        border-bottom-right-radius: 80px;
+        border-left: 0;
+        transform-origin: left; }
+    #skills .container .row .col-sm-4 .progress .progress-right {
+      width: 50%;
+      height: 100%;
+      overflow: hidden;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 1; }
+      #skills .container .row .col-sm-4 .progress .progress-right .progress-bar {
+        left: -100%;
+        border-top-left-radius: 90px;
+        border-bottom-left-radius: 90px;
+        border-right: 0;
+        transform-origin: right;
+        animation: loading-1 0.01s linear forwards; }
+  #skills .container .row .col-sm-4 .green_1 .progress-value, #skills .container .row .col-sm-4 .green_2 .progress-value, #skills .container .row .col-sm-4 .green_3 .progress-value {
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: #666;
+    line-height: 135px;
+    text-align: center;
+    position: absolute;
+    top: -5%;
+    left: 0; }
+  #skills .container .row .col-sm-4 .green_1 .progress-right .progress-bar, #skills .container .row .col-sm-4 .green_2 .progress-right .progress-bar, #skills .container .row .col-sm-4 .green_3 .progress-right .progress-bar {
+    transform: rotate(180deg); }
+  #skills .container .row .col-sm-4 .green_1 .progress-left .progress-bar, #skills .container .row .col-sm-4 .green_2 .progress-left .progress-bar, #skills .container .row .col-sm-4 .green_3 .progress-left .progress-bar {
+    transform: rotate(135deg); }
+  #skills .container .row .col-sm-4 .green_2 .progress-left .progress-bar {
+    transform: rotate(95deg); }
+  #skills .container .row .col-sm-4 .green_3 .progress-left .progress-bar {
+    transform: rotate(360deg); }
+  #skills .container .row .col-sm-4 .label_circle {
+    text-align: center;
+    line-height: 16px;
+    font-size: 16px;
+    color: #666;
+    margin-top: 24px; }
+@media screen and (max-width: 767px) {
+  #skills .container .row .col-sm-4 {
+    margin-bottom: 75px; } }
+
+/*---------------------------------------------------------FOOTER---------------------------------------------------------*/
+footer {
+  background: rgba(0, 0, 0, 0.85); }
+  footer .container {
+    padding: 100px 15px; }
+    footer .container .row .col-sm-6 .social {
+      text-align: center; }
+      footer .container .row .col-sm-6 .social li {
+        display: inline-block;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        border-radius: 3px;
+        width: 50px;
+        height: 50px; }
+        footer .container .row .col-sm-6 .social li:hover {
+          border-color: #ccc; }
+        footer .container .row .col-sm-6 .social li:hover a {
+          color: #ccc; }
+        footer .container .row .col-sm-6 .social li a {
+          color: rgba(255, 255, 255, 0.2);
+          line-height: 50px;
+          vertical-align: middle;
+          font-size: 20px; }
+        footer .container .row .col-sm-6 .social li:nth-child(2) {
+          margin: 0 50px; }
+    footer .container .row .col-sm-6 h3 {
+      text-align: center;
+      color: #ccc;
+      font-size: 25px;
+      margin-top: 45px; }
