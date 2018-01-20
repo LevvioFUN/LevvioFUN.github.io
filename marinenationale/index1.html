@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="landingApp" style="height:100%;width:100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Indigo</title>
+    <meta name="description" content="Indigo">
+    <meta name="application-name" content="Indigo">
+    <link rel="stylesheet" href="interstitiel-ui.css">
+</head>
+<body>
+
+<div class="creative">
+    <div ng-click="redirect('../landing/index1.html', 'https://ad.atdmt.com/c/go;p=11207202444077;ev.a=1;idfa=;aaid=;idfa_lat=;aaid_lat=;cache=?h=[redirection]')">
+        <header class="header">
+            <div class="compas">
+                <img src="/marinenationale/03i/icon.gif" alt="">
+            </div>
+            <div class="address">
+                <p>CIFRA MARINE PARIS</p>
+                <p>8 RUE ST-DOMINIQUE</p>
+                <p>75007 PARIS</p>
+            </div>
+            <div class="arrow">
+                <div class="arrow-span">
+                    <div class="text">
+                        <span class="vais">j'y vais</span>
+                        <svg version="1.1" id="Premier_plan" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.6 29.5" style="enable-background:new 0 0 19.6 29.5;" xml:space="preserve">
+                                    <path d="M1.6,4.4L12,15L1.6,25.6L5,29l13.7-14L5,1L1.6,4.4z"/>
+                                </svg>
+                    </div>
+                    <div class="time">
+                        <span>&agrave; 400m</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <blockquote class="geolayer">
+            <img class="background" data-src="/marinenationale/tf01/i/background01.jpg" alt="">
+            <div class="container"></div>
+            <p>Venez recontrer un marin conseiller en recrutement</p>
+            <h2><span>LA MARINE</span><br> RECRUTE</h2>
+            <img class="logo" src="../ressources/images/inter/logo-indigo-vinci-park.png" alt="">
+            <img class="pine" src="../ressources/images/inter/pine.svg">
+            <img class="geo" src="../ressources/images/inter/bg_geolayer.png" alt="">
+            <div class="geo2"><img src="../ressources/images/inter/bg_geolayer.png" alt=""></div>
+        </blockquote>
+        <section class="main_section">
+            <div class="container_1">
+                <div class="cont_1">
+                    <img data-src="/marinenationale/tf01/i/blocktxt01.png" alt="">
+                </div>
+                <div class="cont_2">
+                    <img data-src="/marinenationale/tf01/i/blocktxt02.png" alt="">
+                </div>
+            </div>
+            <div class="container_2">
+                <div class="cont_1">
+                    <img data-src="/marinenationale/tf01/i/message.png" alt="">
+                </div>
+                <div class="cont_2">
+                    <img class="info_1" data-src="/marinenationale/tf01/i/logomarine.jpg" alt="">
+                    <img class="info_2" data-src="/marinenationale/tf01/i/logoarmee.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <button class="btn_CTA btn-animation">
+            <span>EN SAVOIR PLUS</span>
+            <svg version="1.1" id="Premier_plan" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.6 29.5" style="enable-background:new 0 0 19.6 29.5;" xml:space="preserve">
+            <path d="M1.6,4.4L12,15L1.6,25.6L5,29l13.7-14L5,1L1.6,4.4z"/>
+            </svg>
+        </button>
+    </div>
+</div>
+
+<script>
+    // new Image().src = ''.replace('[RANDOM]', new Date().getTime());
+</script>
+<script>
+    var imgUrl = document.location.hostname.indexOf('cdn.vectaury.io') !== -1 ? 'https://cdn.v3ty.com' : 'https://stg-cdn.v3ty.com';
+    var imgs = document.getElementsByTagName('img');
+    for (var i = 0; i < imgs.length; i++) {
+        if (imgs[i].dataset.src) {
+            imgs[i].src = imgUrl + imgs[i].dataset.src;
+            console.log(imgs[i].src);
+        }
+    }
+</script>
+</body>
+</html>

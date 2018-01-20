@@ -1,0 +1,556 @@
+/* =================== */
+/* ===  STRUCTURE  === */
+/* =================== */
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+    appearance: none;
+
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	text-shadow: 1px 1px 1px 1px rgba(0,0,0,0.005);
+
+	margin: 0px; padding: 0px; outline: none; list-style: none;
+	}
+
+html,
+body { width: 100%; height: 100%; overflow: hidden;}
+
+body {
+	font-size: 14px;
+	color: rgba(0,0,0,0.99);
+
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+
+	-webkit-flex-direction: column;
+	-ms-flex-direction: column;
+	flex-direction: column;
+
+	-webkit-flex-wrap: nowrap;
+	-ms-flex-wrap: nowrap;
+	flex-wrap: nowrap;
+
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+
+	-webkit-align-content: stretch;
+	-ms-flex-line-pack: stretch;
+	align-content: stretch;
+
+	-webkit-align-items: stretch;
+	-ms-flex-align: stretch;
+	align-items: stretch;
+	}
+
+	body > div > div { width: 320px; height: 480px; margin: auto; overflow: hidden; position: relative; display: flex;}
+
+	/* iPhone 4S */
+	@media only screen
+	and (min-device-width : 320px)
+	and (min-device-height : 480px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div { width: 100%; height: 100%;}
+		}
+
+	/* iPhone 5/5S */
+	@media only screen
+	and (min-device-width : 320px)
+	and (min-device-height: 568px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div  { width: 100%; height: 100%;}
+		}
+
+	/* iPhone 6 */
+	@media only screen
+	and (min-device-width : 375px)
+	and (min-device-height: 667px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div  { width: 100%; height: 100%;}
+		}
+
+	/* iPhone 6 Plus */
+	@media only screen
+	and (min-device-width : 410px)
+	and (min-device-height : 730px)
+	and (orientation : portrait) {
+		body > div,
+		body > div > div  { width: 100%; height: 100%;}
+		}
+
+	/* Options d'affichage */
+	.horchamp { position: absolute; left: -10000px; top: -10000px;}
+	.textimage { text-indent: -10000px;}
+
+	a { text-decoration: none;}
+
+/* ================== */
+/* ===  GEOLAYER  === */
+/* ================== */
+.geolayer {
+	width: 100%;
+	display: flex;
+	position: absolute;
+	left: 0;
+	top: 10%;
+	z-index: 3;
+	text-align: center;
+    background-image: url(img/BG.jpg);
+    background-size: cover;
+	height: 90%;
+	color: #000;
+	animation: geolayer 1s 4s ease-in forwards;
+}
+
+@keyframes geolayer {
+	to { top: -3000px;}
+}
+
+
+.tagline {
+    position: absolute;
+    width: 100%;
+    top: 19%;
+    color: #722182;
+    font-size: 5vw;
+}
+
+.tagline span {
+    font-style: italic;
+}
+
+.txt {
+    width: 100%;
+    position: absolute;
+    top: 30%;
+    font-size: 6vw;
+}
+
+.name-text {
+	top: 50%;
+	animation: fideIn .2s;
+	animation-iteration-count: 1;
+	animation-fill-mode: forwards;
+	animation-delay: 0.9s;
+	opacity: 0;
+}
+
+.name-text span {
+	text-transform: uppercase;
+}
+
+.distance {
+	position: absolute;
+	display: block;
+	width: 100%;
+	text-align: center;
+	left: 0;
+	top: 35%;
+	z-index: 5;
+	animation: fideIn .2s 0.5s forwards;
+	opacity: 0;
+    color: #5b1583;
+    font-size: 18vw;
+    /*font-family: 'Montserrat-Bold';*/
+}
+
+.pine {
+	position: absolute;
+	width: 20%;
+	left: 40%;
+	top: 58%;
+	z-index: 9;
+    animation: fideIn .2s 0.7s 1 forwards, bounceInUp .6s 0.7s;
+	opacity: 0;
+}
+
+@keyframes bounceInUp {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.3, 1.3);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+/* ================= */
+/* ===  CONTENU  === */
+/* ================= */
+.main_section {
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	z-index: 0;
+	text-align: center;
+	width: 100%;
+	height: 90%;
+	background: url(img/BG.jpg) #333;
+	background-size: 100% 100%;
+}
+
+.main_section .logo {
+	position: absolute;
+	width: 73%;
+	left: 14%;
+	top: 3%;
+}
+
+.main_section p {
+	color: #fff;
+	font-family: 'IndigoSans-Light', sans-serif;
+	position: absolute;
+	top: 17%;
+	width: 100%;
+	opacity: 0;
+	animation: text .5s linear forwards;
+	animation-delay: .2s;
+}
+@keyframes text {
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+}
+.main_section .content_1 {
+	width: 70%;
+	height: 32%;
+	position: absolute;
+	top: 25%;
+	left: 15%;
+	transform: scale(0);
+	animation: content_1 .4s linear forwards;
+	animation-delay: .8s;
+}
+@keyframes content_1 {
+	0% {
+		transform: scale(0);
+	}
+	90% {
+		transform: scale(1.1);
+	}
+	100% {
+		transform: scale(1);
+	}
+}
+.main_section .bubbles {
+    width: 23%;
+    position: absolute;
+    top: 22%;
+    opacity: 0;
+}
+.main_section .bubbles_left {
+	left: 0;
+	animation: bubbles_left .4s linear forwards;
+	animation-delay: 1.2s;
+}
+.main_section .bubbles_right {
+	right: 0;
+	animation: bubbles_right .4s linear forwards;
+	animation-delay: 1.2s;
+}
+@keyframes bubbles_left {
+    0% {
+        opacity: 0;
+        top: 32%;
+        left: 20%;
+    }
+    100% {
+        opacity: 1;
+        top: 22%;
+        left: 0;
+    }
+}
+@keyframes bubbles_right {
+    0% {
+        opacity: 0;
+        top: 32%;
+        right: 20%;
+    }
+    100% {
+        opacity: 1;
+        top: 22%;
+        right: 0;
+    }
+}
+.main_section .content_2 {
+	width: 82%;
+	height: 32%;
+	position: absolute;
+	bottom: 11%;
+	left: 10%;
+}
+.btn_CTA  {
+    display: flex;
+    width: 100%;
+    height: 10%;
+    position: absolute;
+	bottom: -50%;
+	left:0;
+    border: none;
+    background: #fff;
+    text-transform: uppercase;
+    z-index: 6;
+    color: #fff;
+	animation: btn_CTA 1s linear forwards;
+	animation-delay: 1.2s;
+}
+@keyframes btn_CTA {
+    0% {
+        bottom: -50%;
+    }
+    100% {
+        bottom: 0;
+    }
+}
+.btn_CTA span {
+    margin: auto;
+    padding-right: 16px;
+    font-size: 6.1vw;
+	color: #000;
+    font-family: 'Montserrat-Bold',sans-serif;
+}
+.btn_CTA .premier {
+    position: absolute;
+    top: 27%;
+    width: 3.5vw;
+    height: 50%;
+    fill: #000;
+}
+.btn_CTA #premier_plan1 {
+    animation: rightIn-btn, rightIn-btn_before 1.7s infinite;
+    animation-timing-function: cubic-bezier(.47,-.44,.49,1.46);
+}
+.btn_CTA #premier_plan2 {
+    animation: rightIn-btn, rightIn-btn_before 1.7s infinite;
+    animation-delay: .3s;
+    animation-timing-function: cubic-bezier(.47,-.44,.49,1.46);
+}
+.btn_CTA #premier_plan3 {
+    animation: rightIn-btn, rightIn-btn_before 1.7s infinite;
+    animation-delay: .6s;
+    animation-timing-function: cubic-bezier(.47,-.44,.49,1.46);
+
+}
+@keyframes rightIn-btn_before {
+    0% {
+        right: 30%;
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    30% {
+        opacity: .5;
+    }
+    50% {
+        opacity: .3;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        right: 10%;
+        opacity: 0;
+    }
+}
+@keyframes rightIn-btn {
+    0% {
+        right: 30%;
+        opacity: 0;
+    }
+    15% {
+        opacity: 0;
+    }
+    30% {
+        opacity: .5;
+    }
+    50% {
+        opacity: 1;
+    }
+    75% {
+        opacity: .3;
+    }
+    100% {
+        right: 10%;
+        opacity: 0;
+    }
+}
+/* ====================== */
+/* ===  PIED DE PAGE  === */
+/* ====================== */
+
+.header {
+	background: rgba(255,255,255,0.99);
+	width: 100%;
+	min-height: 50px;
+	height: 10%;
+	z-index: 5;
+	display: flex;
+    box-shadow: 0px 0px 16px 0px rgba(61, 61, 61, 0.48);
+}
+
+.compas{
+	width: 19%;
+    margin: auto 0;
+}
+
+.compas img {
+	display: block;
+	width: 75%;
+	margin: auto;
+}
+
+.address {
+    width: 55%;
+    margin: auto 5px;
+    font-size: 3vw;
+    text-transform: uppercase;
+    color: #000;
+	font-family: 'IndigoSans-Light', sans-serif;
+}
+
+.address p:first-child {
+	/*font-weight: bold;*/
+	font-family: 'IndigoSans-Bold', sans-serif;
+}
+
+/* DCO */
+.arrow {
+	width: 28%;
+    display: flex;
+    color: #fff;
+    height: 100%;
+}
+
+.arrow-span {
+	background-color: #232832 ;
+	width: 90%;
+	border-radius: 50px;
+	height: 70%;
+	margin: auto;
+    margin-left: 0;
+	position: relative;
+	font-weight: 900;
+}
+
+.text, .time {
+	position: absolute;
+	left: 0;
+	top: 1%;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	width: 100%;
+}
+
+.text {
+	text-transform: uppercase;
+	animation: fideOut .2s 3.5s 1 forwards;
+	opacity: 1;
+	font-family: 'IndigoSans-Bold', sans-serif;
+}
+
+.text span {
+	font-size: 3.5vw;
+	margin: auto;
+    padding-right: 10px;
+}
+
+.text svg {
+	width: 8px;
+    fill: #fff;
+    display: inline-block;
+    position: absolute;
+    right: 11px;
+    top: 50%;
+    margin-top: -6px;
+    animation: arrow_dco_move .9s infinite;
+}
+
+.time {
+	animation: fideIn .2s 3.5s forwards;
+	opacity: 0;
+	font-family: 'IndigoSans-Bold', sans-serif;
+}
+
+.time span {
+	padding-right: 0;
+    margin: auto;
+	font-size: 4.5vw;
+}
+
+
+
+/* iPhone 4S */
+@media only screen and (min-device-width : 320px) and (min-device-height : 480px) and (orientation : portrait) {}
+
+/* iPhone 5/5S */
+@media only screen and (min-device-width : 320px) and (min-device-height: 568px) and (orientation : portrait) {}
+
+/* iPhone 6 */
+@media only screen and (min-device-width : 375px) and (min-device-height: 667px) and (orientation : portrait) {}
+
+/* iPhone 6 Plus */
+@media only screen and (min-device-width : 414px) and (min-device-height : 736px) and (orientation : portrait) {
+    .btn_CTA .premier {
+        top: 27%;
+    }
+}
+
+
+
+@keyframes arrow_dco_move {
+	to { right: 9px;}
+}
+
+@keyframes rightIn {
+	to { right: 11px;}
+}
+
+@keyframes fideOut {
+	to { opacity: 0;}
+}
+@keyframes fideIn {
+	to { opacity: 1;}
+}
+@keyframes infoRight {
+	to { right: 21%; opacity: 1}
+}
+
+@keyframes rightFadeIn {
+	to { right: 12%; opacity: 1}
+}
+@keyframes infoLeft {
+	to { left: 21%; opacity: 1}
+}
+@keyframes bganim {
+	to { background-position: right;}
+}
+@keyframes btnanim {
+    from {transform: scale(1.3);}
+	to { opacity: 1; transform: scale(1);}
+}
+@keyframes fadeIn {
+	to { opacity: 1;}
+}
+@keyframes fideTop {
+	to { background-color: rgba(255, 255, 255, 0.8);}
+}

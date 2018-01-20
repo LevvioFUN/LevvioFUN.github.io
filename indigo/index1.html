@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="fr" ng-app="landingApp" style="height:100%;width:100%;">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <title>Indigo</title>
+    <meta name="description" content="Indigo">
+    <meta name="application-name" content="Indigo">
+    <link rel="shortcut icon" type="image/x-icon" href="ressources/images/logo.jpg">
+
+    <link rel="stylesheet" href="ressources/css/interstitiel-ui.css">
+    <link rel="stylesheet" href="ressources/css/animate.css">
+
+    <!-- Jquery before Angular -->
+    <script src="ressources/scripts/jquery-2.1.4.min.js"></script>
+    <script src="ressources/scripts/angular.min.js"></script>
+    <script src="ressources/scripts/document-location-params.js"></script>
+    <script src="ressources/scripts/fastscope.js"></script>
+    <script src="ressources/scripts/app.js"></script>
+    <script>
+        (function (v, e, c, t, r, k, _) {
+            v['VecTrKName'] = r;
+            v[r] = v[r] || function () {
+                (v[r].a = v[r].a || []).push(arguments)
+            };
+            v[r].d = 1 * new Date();
+            k = e.createElement(c);
+            _ = e.getElementsByTagName(c)[0];
+            k.async = 1;
+            k.src = t;
+            _.parentNode.insertBefore(k, _)
+        })(window, document, 'script', 'https://cdn.vectaury.io/static/vectrk/vectrk.0.1.0.min.js', 'vectrk');
+        if (document.location.hostname.indexOf('cdn-dev') !== -1) {
+            vectrk('_baseUrl', 'https://trk-stg.vectaury.io');
+        }
+    </script>
+</head>
+<body
+        ng-controller="landingCtrl"
+        fastscope="../creative.php"
+        fastscope-enabled="!isStatic"
+        fastscope-id="search-ng"
+        fastscope-method="post"
+        fastscope-params="searchParams"
+        fastscope-form-url-encoded="true"
+        fastscope-data-name="searchResponse"
+        fastscope-success-callback="fsSuccess(id, method, data, code, headers)"
+        fastscope-error-callback="fsError(id, method, data, code, headers)"
+        fastscope-watch="searchParams"
+        tag-plan="indigo201712"
+        tag-plan-type="adv_ban_imp"
+        tag-plan-page="inter1"
+        tag-plan-dco="{{searchResponse.data.store.id}}"
+        ng-class="{'demo-type-left': demo}">
+<div class="creative">
+    <div ng-click="redirect('../landing/index1.html', 'https://ad.atdmt.com/c/go;p=11207202444077;ev.a=1;idfa=;aaid=;idfa_lat=;aaid_lat=;cache=?h=[redirection]')">
+        <header class="header">
+            <div class="compas">
+                <img src="ressources/images/inter/icon.gif" alt="">
+            </div>
+            <div class="address">
+                <p>{{searchResponse.data.store.name}} PARKING LOBAU-RIVOLI</p>
+                <p>{{searchResponse.data.store.address_1}} 4 RUT DE LOBAU</p>
+                <p>{{searchResponse.data.store.postal_code}} {{searchResponse.data.store.city}} 75004PARIS</p>
+            </div>
+            <div class="arrow">
+                <div class="arrow-span">
+                    <div class="text">
+                        <span class="vais">j'y vais</span>
+                        <svg version="1.1" id="Premier_plan" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.6 29.5" style="enable-background:new 0 0 19.6 29.5;" xml:space="preserve">
+                                    <path d="M1.6,4.4L12,15L1.6,25.6L5,29l13.7-14L5,1L1.6,4.4z"/>
+                                </svg>
+                    </div>
+                    <div class="time">
+                        <span>&agrave; 200m{{searchResponse.data.store.distance | distance}}</span>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <blockquote class="geolayer">
+        <img class="logo" src="ressources/images/inter/logo-indigo-vinci-park.png" alt="">
+        <p class="tagline">PLACE AU FUTUR</p>
+        <p class="txt">Vous êtes &agrave; </p>
+        <span class="distance">{{searchResponse.data.store.distance | distance }} 200m</span>
+        <p class="txt name-text">du parking LOBAU-RIVOLI<span> {{searchResponse.data.store.name}}</span></p>
+        <img class="pine" src="ressources/images/inter/pine.svg">
+                <img class="geo" src="ressources/images/inter/bg_geolayer.png" alt="">
+            <div class="geo2"><img src="ressources/images/inter/bg_geolayer.png" alt=""></div>
+        </blockquote>
+        <section class="main_section">
+            <div class="rect-left"></div>
+            <div class="rect-top"></div>
+            <div class="rect-right"></div>
+            <div class="rect-bottom-1"></div>
+            <div class="rect-bottom-2"></div>
+            <div class="ban">
+                <img src="ressources/images/inter/baseline.jpg" alt="">
+            </div>
+            <button class="btn_CTA btn-animation">
+                <span>Y ALLER</span>
+                <svg version="1.1" id="Premier_plan" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 19.6 29.5" style="enable-background:new 0 0 19.6 29.5;" xml:space="preserve">
+                            <path d="M1.6,4.4L12,15L1.6,25.6L5,29l13.7-14L5,1L1.6,4.4z"/>
+                        </svg>
+            </button>
+        </section>
+    </div>
+</div>
+
+<script>
+    // new Image().src = ''.replace('[RANDOM]', new Date().getTime());
+</script>
+
+</body>
+</html>
