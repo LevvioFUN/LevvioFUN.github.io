@@ -1,13 +1,3 @@
-/* owl-carousel  */
-$(document).ready(function () {
-    $(".owl-carousel").owlCarousel({
-        loop: true,
-        items: 1,
-        margin: 10,
-        autoplay: true,
-        smartSpeed: 1000
-    });
-});
 /* date-picker  */
 $( function() {
     $( "#datepicker" ).datepicker();
