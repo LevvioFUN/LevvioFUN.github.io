@@ -2,18 +2,9 @@
 $( function() {
     $( "#datepicker" ).datepicker();
 } );
-// /* drag_object  */
-// $( function() {
-//     $( "#draggable" ).draggable();
-//     $( "#droppable" ).droppable({
-//         drop: function( event, ui ) {
-//             $( this )
-//                 .addClass( "ui-state-highlight" )
-//                 .find( "p" )
-//                 .html( "Dropped!" );
-//         }
-//     });
-// } );
+
+ /* drag_object  */
+
 $(".drag-item").draggable({
     start: function () {
         var $draggedElement = $(this);
