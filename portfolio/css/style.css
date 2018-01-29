@@ -154,11 +154,7 @@ header {
   #works .container .row .col-md-4 .work_5 {
     background: url(../img/bino.png) center/cover; }
   #works .container .row .col-md-4 .work_6 {
-    background: #3c3c3c;
-    text-align: center;
-    vertical-align: middle;
-    color: #ccc;
-    line-height: 200px; }
+    background: url(../img/yukngalam.png) center/cover; }
 
 /*---------------------------------------------------------SECTION - #SKILLS---------------------------------------------------------*/
 #skills .container {
