@@ -17,7 +17,60 @@
     <title>filin</title>
 </head>
 <body>
-<section class="antipasti">
+<header id="home">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="owl-carousel">
+                <div>
+                    <img src="img/slide_home.png" alt="">
+                </div>
+                <div>
+                    <img src="img/slide_two.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/slide_3.jpg" alt="">
+                </div>
+                <div>
+                    <img src="img/slide_4.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<section class="nav-panel">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg" id="navanim">
+            <a class="navbar-brand" href="#home"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#menu">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#wines">Винная карта</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#bar">Бар</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact_us">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Резервация</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </div>
+</section>
+<section class="antipasti" id="menu">
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="col">
@@ -171,7 +224,7 @@
         </div>
     </div>
 </section>
-<section class="vines">
+<section class="wines" id="wines">
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="col">
@@ -409,7 +462,7 @@
         </div>
     </div>
 </section>
-<section class="drinks">
+<section class="drinks" id="bar">
     <div class="container">
         <div class="row justify-content-sm-center">
             <div class="col">
@@ -443,7 +496,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 right-column">
-                        <div  class="querie">
+                        <div class="querie">
                             <img src="img/juice.png" alt="">
                         </div>
                         <div>
@@ -481,7 +534,7 @@
                         </div>
                     </div>
                     <div class="col-lg-5 right-column">
-                        <div  class="querie">
+                        <div class="querie">
                             <img src="img/cognac.png" alt="">
                         </div>
                         <div>
@@ -510,22 +563,22 @@
                     </div>
                 </div>
                 <div class="row justify-content-md-center cocktails">
-                        <div class="col-lg-5 left-column">
-                            <div>
-                                <img src="img/non_alcohol_drinks_left.png" class="img" alt="">
-                            </div>
-                            <div class="last-price">
-                                <img src="img/classic-left.png" alt="">
-                            </div>
+                    <div class="col-lg-5 left-column">
+                        <div>
+                            <img src="img/non_alcohol_drinks_left.png" class="img" alt="">
                         </div>
-                        <div class="col-lg-5 right-column big-margin">
-                            <div class="right-margin">
-                                <img src="img/non_alcohol_drinks_right.png" alt="">
-                            </div>
-                            <div class="last-price right-margin">
-                                <img src="img/classic-right.png" alt="">
-                            </div>
+                        <div class="last-price">
+                            <img src="img/classic-left.png" alt="">
                         </div>
+                    </div>
+                    <div class="col-lg-5 right-column big-margin">
+                        <div class="right-margin">
+                            <img src="img/non_alcohol_drinks_right.png" alt="">
+                        </div>
+                        <div class="last-price right-margin">
+                            <img src="img/classic-right.png" alt="">
+                        </div>
+                    </div>
                 </div>
                 <div class="row justify-content-sm-center">
                     <div class="col name-menu">
@@ -559,18 +612,18 @@
     </div>
 </section>
 
-<footer>
+<footer id="contact_us">
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
                 <a href="#" class="logo_foot"></a>
             </div>
             <div class="col-sm-4 contacts">
-                    <h2>Контакты:</h2>
-                    <h3>Россия, г. Белгород, улица Парковая, 10
-                        (КДЦ "Дукати" 2й этаж)</h3>
-                    <h2>Телефон:</h2>
-                    <h3>+7 472 225-58-88</h3>
+                <h2>Контакты:</h2>
+                <h3>Россия, г. Белгород, улица Парковая, 10
+                    (КДЦ "Дукати" 2й этаж)</h3>
+                <h2>Телефон:</h2>
+                <h3>+7 472 225-58-88</h3>
             </div>
             <div class="col-sm-4">
                 <h2>Режим работы:</h2>
@@ -607,6 +660,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
         integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
         crossorigin="anonymous"></script>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
         integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
         crossorigin="anonymous"></script>
