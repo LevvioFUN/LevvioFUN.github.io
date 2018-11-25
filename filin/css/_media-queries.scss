@@ -1,15 +1,76 @@
 @mixin media-queries {
-  @media screen and (min-width: 992px) and (max-width: 1199px) {
-      .name-menu {
-        max-width: 960px;
-      }
-    .left-column, .right-column {
-      img {
-        width: 100%;
+  @media screen and (min-width: 1720px) and (max-width: 1920px) {
+    header {
+      .container-fluid {
+        .row {
+          .owl-carousel {
+            .owl-nav {
+              .owl-prev {
+                left: 24%;
+              }
+              .owl-next {
+                right: 24%;
+              }
+            }
+          }
+        }
       }
     }
   }
-
+  @media screen and (min-width: 1520px) and (max-width: 1720px) {
+    header {
+      .container-fluid {
+        .row {
+          .owl-carousel {
+            .owl-nav {
+              .owl-prev {
+                left: 19%;
+              }
+              .owl-next {
+                right: 19%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1320px) and (max-width: 1520px) {
+    header {
+      .container-fluid {
+        .row {
+          .owl-carousel {
+            .owl-nav {
+              .owl-prev {
+                left: 16%;
+              }
+              .owl-next {
+                right: 16%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  @media screen and (min-width: 1200px) and (max-width: 1320px) {
+    header {
+      .container-fluid {
+        .row {
+          .owl-carousel {
+            .owl-nav {
+              .owl-prev {
+                left: 13%;
+              }
+              .owl-next {
+                right: 13%;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
   @media screen and (min-width: 319px) and (max-width: 992px) {
     .querie {
       &:before {
@@ -30,10 +91,117 @@
       }
     }
   }
+  @media screen and (min-width: 992px) and (max-width: 1199px) {
+    .nav-panel {
+      .container {
+        padding: 0 15px;
+        box-sizing: content-box;
+        .fixed, .navbar {
+          width: 100%;
+          max-width: 1007px;
+          .navbar-collapse {
+            .navbar-nav {
+              li {
+                &:first-child {
+                  margin-left: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .row {
+      margin: 0;
+    }
 
-  @media screen and (min-width: 768px) and (max-width: 992px) {
+    header {
+      .container-fluid {
+        .row {
+          .owl-carousel {
+            .owl-nav {
+              .owl-prev {
+                left: 9%;
+              }
+              .owl-next {
+                right: 9%;
+              }
+            }
+          }
+        }
+      }
+    }
     .name-menu {
-      max-width: 720px;
+      max-width: 977px;
+    }
+    .left-column, .right-column {
+      img {
+        width: 100%;
+      }
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 991px) {
+    .row {
+      margin: 0;
+    }
+    header {
+      .container-fluid {
+        padding: 0;
+        .row {
+          .owl-carousel {
+            .owl-stage-outer {
+              img {
+                height: 65vh;
+              }
+            }
+            .owl-nav {
+              .owl-prev {
+                display: none;
+              }
+              .owl-next {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .nav-panel {
+      .container {
+        padding: 0 15px;
+        box-sizing: content-box;
+        .fixed, .navbar {
+          width: 100%;
+          max-width: 1007px;
+          .navbar-toggler {
+            margin-right: 100px;
+          }
+          .navbar-brand {
+            margin-left: 100px;
+          }
+          .navbar-collapse {
+            z-index: 2;
+            .ml-auto {
+              background-color: #0d183c;
+            }
+            .navbar-nav {
+              li {
+                max-width: 25%;
+                margin: auto;
+                display: block;
+                padding: 5px;
+                &:last-child {
+                  margin: 0 auto 10px;
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+    .name-menu {
       box-sizing: border-box;
       &:after {
         max-width: 525px;
@@ -77,8 +245,74 @@
     }
   }
   @media screen and (min-width: 576px) and (max-width: 767px) {
+    header {
+      .container-fluid {
+        padding: 0;
+        .row {
+          .owl-carousel {
+            .owl-stage-outer {
+              img {
+                height: 50vh;
+              }
+            }
+            .owl-nav {
+              .owl-prev {
+                display: none;
+              }
+              .owl-next {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .row {
+      margin: 0;
+    }
+    .top-split-line {
+      &:before {
+        max-width: 399px;
+      }
+    }
+    .nav-panel {
+      .container {
+        padding: 0 15px;
+        box-sizing: content-box;
+        .fixed, .navbar {
+          width: 100%;
+          max-width: 1007px;
+          left: 0;
+          height: 10vh;
+          .navbar-toggler {
+            margin-right: 100px;
+          }
+          .navbar-brand {
+            margin-left: 100px;
+          }
+          .navbar-collapse {
+            z-index: 2;
+            .ml-auto {
+              background-color: #0d183c;
+            }
+            .navbar-nav {
+              li {
+                max-width: 25%;
+                margin: auto;
+                display: block;
+                padding: 5px;
+                &:last-child {
+                  margin: 0 auto 10px;
+                  padding: 0;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .name-menu {
-      max-width: 540px;
+      max-width: 735px;
       box-sizing: border-box;
       img {
         max-width: 530px;
@@ -122,22 +356,87 @@
     }
   }
   @media screen and (max-width: 575px) {
+    header {
+      .container-fluid {
+        padding: 0;
+        .row {
+          .owl-carousel {
+            .owl-stage-outer {
+              img {
+                height: 50vh;
+              }
+            }
+            .owl-nav {
+              .owl-prev {
+                display: none;
+              }
+              .owl-next {
+                display: none;
+              }
+            }
+          }
+        }
+      }
+    }
+    .nav-panel {
+      .container {
+        padding: 0 15px;
+        box-sizing: content-box;
+        .fixed, .navbar {
+          width: 100%;
+          max-width: 1007px;
+          left: 0;
+          .navbar-toggler {
+            margin-right: 20px;
+          }
+          .navbar-brand {
+            margin-left: 20px;
+          }
+          .navbar-collapse {
+            z-index: 2;
+            .ml-auto {
+              background-color: #0d183c;
+            }
+            .navbar-nav {
+              padding-top: 5px;
+              li {
+                max-width: 25%;
+                margin: auto;
+                display: block;
+                padding: 0;
+                &:last-child {
+                  margin: 5px auto 10px;
+                  padding: 0;
+                  a {
+                    padding: 4px 5px;
+                  }
+                }
+                a {
+                  font-size: 12px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
     .name-menu {
       //padding: 0 15px;
       &:after {
-        max-width: 320px;
+        max-width: 260px;
       }
       img {
         margin: 25px auto 0 auto;
         max-width: 280px;
       }
     }
+
     .row {
       margin-left: 0;
       margin-right: 0 !important;
     }
     .big-central-column {
-      margin-bottom: 15px!important;
+      margin-bottom: 15px !important;
       .d-block {
         max-width: 320px;
         width: 100%;
@@ -175,7 +474,7 @@
         .row {
           .name-menu {
             &:after {
-              max-width: 320px;
+              max-width: 260px;
             }
             img {
               max-width: 260px;
