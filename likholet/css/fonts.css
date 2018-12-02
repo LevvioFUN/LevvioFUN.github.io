@@ -1,0 +1,12 @@
+@font-face {
+  font-family: 'TTNormsBold';
+  src: url("../fonts/TTNormsBold.eot");
+  src: url("../fonts/TTNormsBold.eot") format("embedded-opentype"), url("../fonts/TTNormsBold.woff2") format("woff2"), url("../fonts/TTNormsBold.woff") format("woff"), url("../fonts/TTNormsBold.ttf") format("truetype"), url("../fonts/TTNormsBold.svg#TTNormsBold") format("svg"); }
+@font-face {
+  font-family: 'TTNormsRegular';
+  src: url("../fonts/TTNormsRegular.eot");
+  src: url("../fonts/TTNormsRegular.eot") format("embedded-opentype"), url("../fonts/TTNormsRegular.woff2") format("woff2"), url("../fonts/TTNormsRegular.woff") format("woff"), url("../fonts/TTNormsRegular.ttf") format("truetype"), url("../fonts/TTNormsRegular.svg#TTNormsRegular") format("svg"); }
+@font-face {
+  font-family: 'TTNormsMedium';
+  src: url("../fonts/TTNormsMedium.eot");
+  src: url("../fonts/TTNormsMedium.eot") format("embedded-opentype"), url("../fonts/TTNormsMedium.woff2") format("woff2"), url("../fonts/TTNormsMedium.woff") format("woff"), url("../fonts/TTNormsMedium.ttf") format("truetype"), url("../fonts/TTNormsMedium.svg#TTNormsMedium") format("svg"); }
